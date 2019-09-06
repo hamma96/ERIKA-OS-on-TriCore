@@ -1,0 +1,1812 @@
+Archive member included because of file (symbol)
+
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+                              (__TRICORE_DERIVATE_NAME__)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+                              obj/ee_applcfg.c.o (osEE_tricore_system_timer_handler)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o) (__TRAPTAB)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o) (__INTTAB0)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                              obj/Core0.c.o (DisableAllInterrupts)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                              obj/ee_applcfg.c.o (osEE_idle_hook_wrapper)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_scheduler_rq_insert)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_task_activated)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_scheduler_task_activated)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o) (osEE_counter_increment)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_alarm_set_rel)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_st_start_rel)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_change_context_from_running)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_cpu_startos)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o) (osEE_hal_sync_barrier)
+C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o) (osEE_hal_ready2stacked)
+c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+                              C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o) (_exit)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 obj/Core0.c.o
+ .data          0x00000000        0x0 obj/Core1.c.o
+ .bss           0x00000000        0x0 obj/Core1.c.o
+ .data          0x00000000        0x0 obj/Core2.c.o
+ .bss           0x00000000        0x0 obj/Core2.c.o
+ .text          0x00000000        0x0 obj/ee_applcfg.c.o
+ .bss           0x00000000        0x0 obj/ee_applcfg.c.o
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .text          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .data          0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .bss           0x00000000        0x0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .text          0x00000000        0x0 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+ .data          0x00000000        0x0 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+ .bss           0x00000000        0x8 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Used               Free               Attributes
+DMI_DSPR2_local  0xd0000000         0x0001e000         0x00000000         0x0001e000         w !xpc2
+DMI_DSPR2        0x50000000         0x0001e000         0x0001dc00         0x00000400         w !xpc2
+PMI_PSPR2        0x50100000         0x00006000         0x00000000         0x00006000         xw !pc2
+DMI_DSPR1_local  0xd0000000         0x0001e000         0x00000000         0x0001e000         w !xpc1
+DMI_DSPR1        0x60000000         0x0001e000         0x0001dc00         0x00000400         w !xpc1
+PMI_PSPR1        0x60100000         0x00006000         0x00000000         0x00006000         xw !pc1
+DMI_DSPR0_local  0xd0000000         0x0001c000         0x00000000         0x0001c000         w !xpc0
+DMI_DSPR0        0x70000000         0x0001c000         0x0001bc00         0x00000400         w !xpc0
+PMI_PSPR0        0x70100000         0x00006000         0x00000000         0x00006000         xw !pc0
+PMI_PSRAM_local  0xc0000000         0x00006000         0x00000000         0x00006000         xw !p
+PMU_PFLASH       0x80000000         0x00400000         0x0000e218         0x003f1de8         xr !p
+PMU_PFLASH_nc    0xa0000000         0x00400000         0x00000000         0x00400000         xr !p
+PMU_DFLASH0      0xaf000000         0x00104000         0x00000000         0x00104000         r !xp
+PMU_DFLASH1      0xaf110000         0x00010000         0x00000000         0x00010000         r !xp
+LMU_SRAM         0x90000000         0x00008000         0x00000000         0x00008000         w !xp
+LMU_SRAM_nc      0xb0000000         0x00008000         0x00000008         0x00007ff8         w !xp
+EDMEM            0x9f000000         0x00100000         0x00000000         0x00100000         w !xp
+EDMEM_nc         0xbf000000         0x00100000         0x00000000         0x00100000         w !xp
+BROM             0x8fff8000         0x00008000         0x00000000         0x00008000         xr !p
+*default*        0x00000000         0xffffffff         0x00000000         0xffffffff
+
+List of aliases
+
+DMI_DSPR0       : GLOBAL_RAM
+
+Memory region maps:
+
+CORE     Local Region   Global Region
+CPU0     0xd0000000     0x70000000
+CPU1     0xd0000000     0x60000000
+CPU2     0xd0000000     0x50000000
+
+
+Linker script and memory map
+
+LOAD obj/Core0.c.o
+LOAD obj/Core1.c.o
+LOAD obj/Core2.c.o
+LOAD obj/ee_applcfg.c.o
+LOAD C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a
+LOAD c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a
+LOAD c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a
+LOAD c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a
+LOAD c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libm.a
+LOAD c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libc.a
+LOAD c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/tc161\libgcc.a
+                0x00002700                __TRICORE_DERIVATE_MEMORY_MAP__ = 0x2700
+                [0x00002000]                __CSA_SIZE = DEFINED (__CSA_SIZE)?__CSA_SIZE:0x2000
+                [0x00000400]                __ISTACK_SIZE = DEFINED (__ISTACK_SIZE)?__ISTACK_SIZE:0x400
+                [0x00001000]                __USTACK_SIZE = DEFINED (__USTACK_SIZE)?__USTACK_SIZE:0x1000
+                [0x00000000]                __HEAP_SIZE = DEFINED (__HEAP_SIZE)?__HEAP_SIZE:0x0
+                [0x00002000]                __CSA0_SIZE = DEFINED (__CSA0_SIZE)?__CSA0_SIZE:__CSA_SIZE
+                [0x00000400]                __ISTACK0_SIZE = DEFINED (__ISTACK0_SIZE)?__ISTACK0_SIZE:__ISTACK_SIZE
+                [0x00001000]                __USTACK0_SIZE = DEFINED (__USTACK0_SIZE)?__USTACK0_SIZE:__USTACK_SIZE
+                [0x00002000]                __CSA1_SIZE = DEFINED (__CSA1_SIZE)?__CSA1_SIZE:__CSA_SIZE
+                [0x00000400]                __ISTACK1_SIZE = DEFINED (__ISTACK1_SIZE)?__ISTACK1_SIZE:__ISTACK_SIZE
+                [0x00001000]                __USTACK1_SIZE = DEFINED (__USTACK1_SIZE)?__USTACK1_SIZE:__USTACK_SIZE
+                [0x00002000]                __CSA2_SIZE = DEFINED (__CSA2_SIZE)?__CSA2_SIZE:__CSA_SIZE
+                [0x00000400]                __ISTACK2_SIZE = DEFINED (__ISTACK2_SIZE)?__ISTACK2_SIZE:__ISTACK_SIZE
+                [0x00001000]                __USTACK2_SIZE = DEFINED (__USTACK2_SIZE)?__USTACK2_SIZE:__USTACK_SIZE
+                0x50000000                __DSPR2_START = 0x50000000
+                0x60000000                __DSPR1_START = 0x60000000
+                0x70000000                __DSPR0_START = 0x70000000
+                0x0001e000                __DSPR2_SIZE = 0x1e000
+                0x0001e000                __DSPR1_SIZE = 0x1e000
+                0x0001c000                __DSPR0_SIZE = 0x1c000
+                0x00019c00                __CSA0_OFFSET = ((__DSPR0_SIZE - 0x400) - __CSA0_SIZE)
+                0x00019700                __ISTACK0_OFFSET = ((__CSA0_OFFSET - 0x100) - __ISTACK0_SIZE)
+                0x00018600                __USTACK0_OFFSET = ((__ISTACK0_OFFSET - 0x100) - __USTACK0_SIZE)
+                0x0001bc00                __CSA1_OFFSET = ((__DSPR1_SIZE - 0x400) - __CSA1_SIZE)
+                0x0001b700                __ISTACK1_OFFSET = ((__CSA1_OFFSET - 0x100) - __ISTACK1_SIZE)
+                0x0001a600                __USTACK1_OFFSET = ((__ISTACK1_OFFSET - 0x100) - __USTACK1_SIZE)
+                0x0001bc00                __CSA2_OFFSET = ((__DSPR2_SIZE - 0x400) - __CSA2_SIZE)
+                0x0001b700                __ISTACK2_OFFSET = ((__CSA2_OFFSET - 0x100) - __ISTACK2_SIZE)
+                0x0001a600                __USTACK2_OFFSET = ((__ISTACK2_OFFSET - 0x100) - __USTACK2_SIZE)
+
+.bmhd0          memory region -> PMU_PFLASH
+                0x80000000        0x0
+                0x80000000                BootModeHeader0 = .
+ *(.bmhd0)
+
+.bmhd1          memory region -> PMU_PFLASH
+                0x80020000        0x0
+                0x80020000                BootModeHeader1 = .
+ *(.bmhd1)
+
+.startup        memory region -> PMU_PFLASH
+                0x80000020        0x6
+                0x80000020                BootModeIndex = .
+ *(.startup)
+ .startup       0x80000020        0x6 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+                0x80000020                _start
+
+.zrodata
+ *(.zrodata)
+ *(.zrodata.*)
+
+.sdata2         memory region -> PMU_PFLASH
+                0x80000026        0x0
+ *(.srodata)
+ *(.srodata.*)
+                0x80008000                _SMALL_DATA2_ = SIZEOF (.sdata2)?(ADDR (.sdata2) + 0x8000):((ADDR (.sdata2) & 0xf0000000) + 0x8000)
+                0x80008000                __A1_MEM = _SMALL_DATA2_
+
+.rodata         memory region -> PMU_PFLASH
+                0x80000028      0x6b0
+ *(.rodata)
+ .rodata        0x80000028      0x584 obj/ee_applcfg.c.o
+                0x80000028                osEE_kdb_var
+                0x80000054                osEE_cdb_var_core2
+                0x80000084                osEE_cdb_var_core1
+                0x800000b4                osEE_cdb_var_core0
+ *(.rodata.*)
+ *(.gnu.linkonce.r.*)
+                0x800005ac                . = ALIGN (0x4)
+                0x800005ac                PROVIDE (__clear_table, .)
+                0x800005ac        0x4 LONG 0x50000000 (0x0 + ADDR (.CPU2.zbss))
+                0x800005b0        0x4 LONG 0x0 SIZEOF (.CPU2.zbss)
+                0x800005b4        0x4 LONG 0x500000f8 (0x0 + ADDR (.CPU2.bss))
+                0x800005b8        0x4 LONG 0x2c SIZEOF (.CPU2.bss)
+                0x800005bc        0x4 LONG 0x60000000 (0x0 + ADDR (.CPU1.zbss))
+                0x800005c0        0x4 LONG 0x0 SIZEOF (.CPU1.zbss)
+                0x800005c4        0x4 LONG 0x60000088 (0x0 + ADDR (.CPU1.bss))
+                0x800005c8        0x4 LONG 0x1c SIZEOF (.CPU1.bss)
+                0x800005cc        0x4 LONG 0x70000020 (0x0 + ADDR (.CPU0.zbss))
+                0x800005d0        0x4 LONG 0x0 SIZEOF (.CPU0.zbss)
+                0x800005d4        0x4 LONG 0x700000a8 (0x0 + ADDR (.CPU0.bss))
+                0x800005d8        0x4 LONG 0x1c SIZEOF (.CPU0.bss)
+                0x800005dc        0x4 LONG 0x70000000 (0x0 + ADDR (.zbss))
+                0x800005e0        0x4 LONG 0x0 SIZEOF (.zbss)
+                0x800005e4        0x4 LONG 0x70000000 (0x0 + ADDR (.sbss))
+                0x800005e8        0x4 LONG 0x0 SIZEOF (.sbss)
+                0x800005ec        0x4 LONG 0x70000010 (0x0 + ADDR (.bss))
+                0x800005f0        0x4 LONG 0x10 SIZEOF (.bss)
+                0x800005f4        0x4 LONG 0xb0000000 (0x0 + ADDR (.lmu_zbss))
+                0x800005f8        0x4 LONG 0x0 SIZEOF (.lmu_zbss)
+                0x800005fc        0x4 LONG 0xb0000000 (0x0 + ADDR (.lmu_sbss))
+                0x80000600        0x4 LONG 0x0 SIZEOF (.lmu_sbss)
+                0x80000604        0x4 LONG 0xb0000000 (0x0 + ADDR (.lmu_bss))
+                0x80000608        0x4 LONG 0x8 SIZEOF (.lmu_bss)
+                0x8000060c        0x4 LONG 0xffffffff
+                0x80000610        0x4 LONG 0xffffffff
+                0x80000614                PROVIDE (__copy_table, .)
+                0x80000614        0x4 LONG 0x8000e010 LOADADDR (.CPU2.zdata)
+                0x80000618        0x4 LONG 0x50000000 ADDR (.CPU2.zdata)
+                0x8000061c        0x4 LONG 0x0 SIZEOF (.CPU2.zdata)
+                0x80000620        0x4 LONG 0x8000e010 LOADADDR (.CPU2.data)
+                0x80000624        0x4 LONG 0x50000000 ADDR (.CPU2.data)
+                0x80000628        0x4 LONG 0xf8 SIZEOF (.CPU2.data)
+                0x8000062c        0x4 LONG 0x8000e108 LOADADDR (.CPU1.zdata)
+                0x80000630        0x4 LONG 0x60000000 ADDR (.CPU1.zdata)
+                0x80000634        0x4 LONG 0x0 SIZEOF (.CPU1.zdata)
+                0x80000638        0x4 LONG 0x8000e108 LOADADDR (.CPU1.data)
+                0x8000063c        0x4 LONG 0x60000000 ADDR (.CPU1.data)
+                0x80000640        0x4 LONG 0x88 SIZEOF (.CPU1.data)
+                0x80000644        0x4 LONG 0x8000e190 LOADADDR (.CPU0.zdata)
+                0x80000648        0x4 LONG 0x70000020 ADDR (.CPU0.zdata)
+                0x8000064c        0x4 LONG 0x0 SIZEOF (.CPU0.zdata)
+                0x80000650        0x4 LONG 0x8000e190 LOADADDR (.CPU0.data)
+                0x80000654        0x4 LONG 0x70000020 ADDR (.CPU0.data)
+                0x80000658        0x4 LONG 0x88 SIZEOF (.CPU0.data)
+                0x8000065c        0x4 LONG 0x8000e000 LOADADDR (.zdata)
+                0x80000660        0x4 LONG 0x70000000 ADDR (.zdata)
+                0x80000664        0x4 LONG 0x0 SIZEOF (.zdata)
+                0x80000668        0x4 LONG 0x8000e000 LOADADDR (.sdata)
+                0x8000066c        0x4 LONG 0x70000000 ADDR (.sdata)
+                0x80000670        0x4 LONG 0x0 SIZEOF (.sdata)
+                0x80000674        0x4 LONG 0x8000e000 LOADADDR (.data)
+                0x80000678        0x4 LONG 0x70000000 ADDR (.data)
+                0x8000067c        0x4 LONG 0x10 SIZEOF (.data)
+                0x80000680        0x4 LONG 0x8000e218 LOADADDR (.lmu_zdata)
+                0x80000684        0x4 LONG 0xb0000000 ADDR (.lmu_zdata)
+                0x80000688        0x4 LONG 0x0 SIZEOF (.lmu_zdata)
+                0x8000068c        0x4 LONG 0x8000e218 LOADADDR (.lmu_sdata)
+                0x80000690        0x4 LONG 0xb0000000 ADDR (.lmu_sdata)
+                0x80000694        0x4 LONG 0x0 SIZEOF (.lmu_sdata)
+                0x80000698        0x4 LONG 0x8000e218 LOADADDR (.lmu_data)
+                0x8000069c        0x4 LONG 0xb0000000 ADDR (.lmu_data)
+                0x800006a0        0x4 LONG 0x0 SIZEOF (.lmu_data)
+                0x800006a4        0x4 LONG 0x8000e218 LOADADDR (.CPU0.psram_text)
+                0x800006a8        0x4 LONG 0x70100000 ADDR (.CPU0.psram_text)
+                0x800006ac        0x4 LONG 0x0 SIZEOF (.CPU0.psram_text)
+                0x800006b0        0x4 LONG 0x8000e190 LOADADDR (.CPU1.psram_text)
+                0x800006b4        0x4 LONG 0x60100000 ADDR (.CPU1.psram_text)
+                0x800006b8        0x4 LONG 0x0 SIZEOF (.CPU1.psram_text)
+                0x800006bc        0x4 LONG 0x8000e108 LOADADDR (.CPU2.psram_text)
+                0x800006c0        0x4 LONG 0x50100000 ADDR (.CPU2.psram_text)
+                0x800006c4        0x4 LONG 0x0 SIZEOF (.CPU2.psram_text)
+                0x800006c8        0x4 LONG 0xffffffff
+                0x800006cc        0x4 LONG 0xffffffff
+                0x800006d0        0x4 LONG 0xffffffff
+                0x800006d8                . = ALIGN (0x8)
+ *fill*         0x800006d4        0x4 00
+
+.traptab        memory region -> PMU_PFLASH
+                0x80000700      0x100
+ *(.traptab)
+ *(.traptab*)
+ .traptab_cpu0  0x80000700      0x100 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+                0x80000700                osEE_tc_trap_mmu
+                0x80000700                __TRAPTAB
+                0x80000720                osEE_tc_trap_protection
+                0x80000740                osEE_tc_trap_instruction
+                0x80000760                osEE_tc_trap_context
+                0x80000780                osEE_tc_trap_bus
+                0x800007a0                osEE_tc_trap_assertion
+                0x800007c0                osEE_tc_trap_system
+                0x800007e0                osEE_tc_trap_nmi
+                0x80000800                . = ALIGN (0x8)
+
+.eh_frame       memory region -> PMU_PFLASH
+                0x80000800        0x0
+ *(.gcc_except_table)
+                0x80000800                __EH_FRAME_BEGIN__ = .
+ *(.eh_frame)
+                0x80000800                __EH_FRAME_END__ = .
+ *(.jcr)
+                0x80000800                . = ALIGN (0x8)
+
+.ctors          memory region -> PMU_PFLASH
+                0x80000800        0x8
+                0x80000800                __CTOR_LIST__ = .
+                0x80000800        0x4 LONG 0x0 (((__CTOR_END__ - __CTOR_LIST__) / 0x4) - 0x2)
+ *(.ctors)
+                0x80000804        0x4 LONG 0x0
+                0x80000808                __CTOR_END__ = .
+                0x80000808                . = ALIGN (0x8)
+
+.dtors          memory region -> PMU_PFLASH
+                0x80000808        0x8
+                0x80000808                __DTOR_LIST__ = .
+                0x80000808        0x4 LONG 0x0 (((__DTOR_END__ - __DTOR_LIST__) / 0x4) - 0x2)
+ *(.dtors)
+                0x8000080c        0x4 LONG 0x0
+                0x80000810                __DTOR_END__ = .
+                0x80000810                . = ALIGN (0x8)
+
+.inttab_cpu0    memory region -> PMU_PFLASH
+                0x80002000     0x2000
+ *(.inttab_cpu0)
+ .inttab_cpu0   0x80002000     0x2000 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+                0x80002000                __INTTAB0
+                0x80002020                osEE_tc_core0_isr2_entry_1
+                0x80002040                osEE_tc_core0_isr2_entry_2
+                0x80002060                osEE_tc_core0_isr_dummy_entry_3
+                0x80002080                osEE_tc_core0_isr_dummy_entry_4
+                0x800020a0                osEE_tc_core0_isr_dummy_entry_5
+                0x800020c0                osEE_tc_core0_isr_dummy_entry_6
+                0x800020e0                osEE_tc_core0_isr_dummy_entry_7
+                0x80002100                osEE_tc_core0_isr_dummy_entry_8
+                0x80002120                osEE_tc_core0_isr_dummy_entry_9
+                0x80002140                osEE_tc_core0_isr_dummy_entry_10
+                0x80002160                osEE_tc_core0_isr_dummy_entry_11
+                0x80002180                osEE_tc_core0_isr_dummy_entry_12
+                0x800021a0                osEE_tc_core0_isr_dummy_entry_13
+                0x800021c0                osEE_tc_core0_isr_dummy_entry_14
+                0x800021e0                osEE_tc_core0_isr_dummy_entry_15
+                0x80002200                osEE_tc_core0_isr_dummy_entry_16
+                0x80002220                osEE_tc_core0_isr_dummy_entry_17
+                0x80002240                osEE_tc_core0_isr_dummy_entry_18
+                0x80002260                osEE_tc_core0_isr_dummy_entry_19
+                0x80002280                osEE_tc_core0_isr_dummy_entry_20
+                0x800022a0                osEE_tc_core0_isr_dummy_entry_21
+                0x800022c0                osEE_tc_core0_isr_dummy_entry_22
+                0x800022e0                osEE_tc_core0_isr_dummy_entry_23
+                0x80002300                osEE_tc_core0_isr_dummy_entry_24
+                0x80002320                osEE_tc_core0_isr_dummy_entry_25
+                0x80002340                osEE_tc_core0_isr_dummy_entry_26
+                0x80002360                osEE_tc_core0_isr_dummy_entry_27
+                0x80002380                osEE_tc_core0_isr_dummy_entry_28
+                0x800023a0                osEE_tc_core0_isr_dummy_entry_29
+                0x800023c0                osEE_tc_core0_isr_dummy_entry_30
+                0x800023e0                osEE_tc_core0_isr_dummy_entry_31
+                0x80002400                osEE_tc_core0_isr_dummy_entry_32
+                0x80002420                osEE_tc_core0_isr_dummy_entry_33
+                0x80002440                osEE_tc_core0_isr_dummy_entry_34
+                0x80002460                osEE_tc_core0_isr_dummy_entry_35
+                0x80002480                osEE_tc_core0_isr_dummy_entry_36
+                0x800024a0                osEE_tc_core0_isr_dummy_entry_37
+                0x800024c0                osEE_tc_core0_isr_dummy_entry_38
+                0x800024e0                osEE_tc_core0_isr_dummy_entry_39
+                0x80002500                osEE_tc_core0_isr_dummy_entry_40
+                0x80002520                osEE_tc_core0_isr_dummy_entry_41
+                0x80002540                osEE_tc_core0_isr_dummy_entry_42
+                0x80002560                osEE_tc_core0_isr_dummy_entry_43
+                0x80002580                osEE_tc_core0_isr_dummy_entry_44
+                0x800025a0                osEE_tc_core0_isr_dummy_entry_45
+                0x800025c0                osEE_tc_core0_isr_dummy_entry_46
+                0x800025e0                osEE_tc_core0_isr_dummy_entry_47
+                0x80002600                osEE_tc_core0_isr_dummy_entry_48
+                0x80002620                osEE_tc_core0_isr_dummy_entry_49
+                0x80002640                osEE_tc_core0_isr_dummy_entry_50
+                0x80002660                osEE_tc_core0_isr_dummy_entry_51
+                0x80002680                osEE_tc_core0_isr_dummy_entry_52
+                0x800026a0                osEE_tc_core0_isr_dummy_entry_53
+                0x800026c0                osEE_tc_core0_isr_dummy_entry_54
+                0x800026e0                osEE_tc_core0_isr_dummy_entry_55
+                0x80002700                osEE_tc_core0_isr_dummy_entry_56
+                0x80002720                osEE_tc_core0_isr_dummy_entry_57
+                0x80002740                osEE_tc_core0_isr_dummy_entry_58
+                0x80002760                osEE_tc_core0_isr_dummy_entry_59
+                0x80002780                osEE_tc_core0_isr_dummy_entry_60
+                0x800027a0                osEE_tc_core0_isr_dummy_entry_61
+                0x800027c0                osEE_tc_core0_isr_dummy_entry_62
+                0x800027e0                osEE_tc_core0_isr_dummy_entry_63
+                0x80002800                osEE_tc_core0_isr_dummy_entry_64
+                0x80002820                osEE_tc_core0_isr_dummy_entry_65
+                0x80002840                osEE_tc_core0_isr_dummy_entry_66
+                0x80002860                osEE_tc_core0_isr_dummy_entry_67
+                0x80002880                osEE_tc_core0_isr_dummy_entry_68
+                0x800028a0                osEE_tc_core0_isr_dummy_entry_69
+                0x800028c0                osEE_tc_core0_isr_dummy_entry_70
+                0x800028e0                osEE_tc_core0_isr_dummy_entry_71
+                0x80002900                osEE_tc_core0_isr_dummy_entry_72
+                0x80002920                osEE_tc_core0_isr_dummy_entry_73
+                0x80002940                osEE_tc_core0_isr_dummy_entry_74
+                0x80002960                osEE_tc_core0_isr_dummy_entry_75
+                0x80002980                osEE_tc_core0_isr_dummy_entry_76
+                0x800029a0                osEE_tc_core0_isr_dummy_entry_77
+                0x800029c0                osEE_tc_core0_isr_dummy_entry_78
+                0x800029e0                osEE_tc_core0_isr_dummy_entry_79
+                0x80002a00                osEE_tc_core0_isr_dummy_entry_80
+                0x80002a20                osEE_tc_core0_isr_dummy_entry_81
+                0x80002a40                osEE_tc_core0_isr_dummy_entry_82
+                0x80002a60                osEE_tc_core0_isr_dummy_entry_83
+                0x80002a80                osEE_tc_core0_isr_dummy_entry_84
+                0x80002aa0                osEE_tc_core0_isr_dummy_entry_85
+                0x80002ac0                osEE_tc_core0_isr_dummy_entry_86
+                0x80002ae0                osEE_tc_core0_isr_dummy_entry_87
+                0x80002b00                osEE_tc_core0_isr_dummy_entry_88
+                0x80002b20                osEE_tc_core0_isr_dummy_entry_89
+                0x80002b40                osEE_tc_core0_isr_dummy_entry_90
+                0x80002b60                osEE_tc_core0_isr_dummy_entry_91
+                0x80002b80                osEE_tc_core0_isr_dummy_entry_92
+                0x80002ba0                osEE_tc_core0_isr_dummy_entry_93
+                0x80002bc0                osEE_tc_core0_isr_dummy_entry_94
+                0x80002be0                osEE_tc_core0_isr_dummy_entry_95
+                0x80002c00                osEE_tc_core0_isr_dummy_entry_96
+                0x80002c20                osEE_tc_core0_isr_dummy_entry_97
+                0x80002c40                osEE_tc_core0_isr_dummy_entry_98
+                0x80002c60                osEE_tc_core0_isr_dummy_entry_99
+                0x80002c80                osEE_tc_core0_isr_dummy_entry_100
+                0x80002ca0                osEE_tc_core0_isr_dummy_entry_101
+                0x80002cc0                osEE_tc_core0_isr_dummy_entry_102
+                0x80002ce0                osEE_tc_core0_isr_dummy_entry_103
+                0x80002d00                osEE_tc_core0_isr_dummy_entry_104
+                0x80002d20                osEE_tc_core0_isr_dummy_entry_105
+                0x80002d40                osEE_tc_core0_isr_dummy_entry_106
+                0x80002d60                osEE_tc_core0_isr_dummy_entry_107
+                0x80002d80                osEE_tc_core0_isr_dummy_entry_108
+                0x80002da0                osEE_tc_core0_isr_dummy_entry_109
+                0x80002dc0                osEE_tc_core0_isr_dummy_entry_110
+                0x80002de0                osEE_tc_core0_isr_dummy_entry_111
+                0x80002e00                osEE_tc_core0_isr_dummy_entry_112
+                0x80002e20                osEE_tc_core0_isr_dummy_entry_113
+                0x80002e40                osEE_tc_core0_isr_dummy_entry_114
+                0x80002e60                osEE_tc_core0_isr_dummy_entry_115
+                0x80002e80                osEE_tc_core0_isr_dummy_entry_116
+                0x80002ea0                osEE_tc_core0_isr_dummy_entry_117
+                0x80002ec0                osEE_tc_core0_isr_dummy_entry_118
+                0x80002ee0                osEE_tc_core0_isr_dummy_entry_119
+                0x80002f00                osEE_tc_core0_isr_dummy_entry_120
+                0x80002f20                osEE_tc_core0_isr_dummy_entry_121
+                0x80002f40                osEE_tc_core0_isr_dummy_entry_122
+                0x80002f60                osEE_tc_core0_isr_dummy_entry_123
+                0x80002f80                osEE_tc_core0_isr_dummy_entry_124
+                0x80002fa0                osEE_tc_core0_isr_dummy_entry_125
+                0x80002fc0                osEE_tc_core0_isr_dummy_entry_126
+                0x80002fe0                osEE_tc_core0_isr_dummy_entry_127
+                0x80003000                osEE_tc_core0_isr_dummy_entry_128
+                0x80003020                osEE_tc_core0_isr_dummy_entry_129
+                0x80003040                osEE_tc_core0_isr_dummy_entry_130
+                0x80003060                osEE_tc_core0_isr_dummy_entry_131
+                0x80003080                osEE_tc_core0_isr_dummy_entry_132
+                0x800030a0                osEE_tc_core0_isr_dummy_entry_133
+                0x800030c0                osEE_tc_core0_isr_dummy_entry_134
+                0x800030e0                osEE_tc_core0_isr_dummy_entry_135
+                0x80003100                osEE_tc_core0_isr_dummy_entry_136
+                0x80003120                osEE_tc_core0_isr_dummy_entry_137
+                0x80003140                osEE_tc_core0_isr_dummy_entry_138
+                0x80003160                osEE_tc_core0_isr_dummy_entry_139
+                0x80003180                osEE_tc_core0_isr_dummy_entry_140
+                0x800031a0                osEE_tc_core0_isr_dummy_entry_141
+                0x800031c0                osEE_tc_core0_isr_dummy_entry_142
+                0x800031e0                osEE_tc_core0_isr_dummy_entry_143
+                0x80003200                osEE_tc_core0_isr_dummy_entry_144
+                0x80003220                osEE_tc_core0_isr_dummy_entry_145
+                0x80003240                osEE_tc_core0_isr_dummy_entry_146
+                0x80003260                osEE_tc_core0_isr_dummy_entry_147
+                0x80003280                osEE_tc_core0_isr_dummy_entry_148
+                0x800032a0                osEE_tc_core0_isr_dummy_entry_149
+                0x800032c0                osEE_tc_core0_isr_dummy_entry_150
+                0x800032e0                osEE_tc_core0_isr_dummy_entry_151
+                0x80003300                osEE_tc_core0_isr_dummy_entry_152
+                0x80003320                osEE_tc_core0_isr_dummy_entry_153
+                0x80003340                osEE_tc_core0_isr_dummy_entry_154
+                0x80003360                osEE_tc_core0_isr_dummy_entry_155
+                0x80003380                osEE_tc_core0_isr_dummy_entry_156
+                0x800033a0                osEE_tc_core0_isr_dummy_entry_157
+                0x800033c0                osEE_tc_core0_isr_dummy_entry_158
+                0x800033e0                osEE_tc_core0_isr_dummy_entry_159
+                0x80003400                osEE_tc_core0_isr_dummy_entry_160
+                0x80003420                osEE_tc_core0_isr_dummy_entry_161
+                0x80003440                osEE_tc_core0_isr_dummy_entry_162
+                0x80003460                osEE_tc_core0_isr_dummy_entry_163
+                0x80003480                osEE_tc_core0_isr_dummy_entry_164
+                0x800034a0                osEE_tc_core0_isr_dummy_entry_165
+                0x800034c0                osEE_tc_core0_isr_dummy_entry_166
+                0x800034e0                osEE_tc_core0_isr_dummy_entry_167
+                0x80003500                osEE_tc_core0_isr_dummy_entry_168
+                0x80003520                osEE_tc_core0_isr_dummy_entry_169
+                0x80003540                osEE_tc_core0_isr_dummy_entry_170
+                0x80003560                osEE_tc_core0_isr_dummy_entry_171
+                0x80003580                osEE_tc_core0_isr_dummy_entry_172
+                0x800035a0                osEE_tc_core0_isr_dummy_entry_173
+                0x800035c0                osEE_tc_core0_isr_dummy_entry_174
+                0x800035e0                osEE_tc_core0_isr_dummy_entry_175
+                0x80003600                osEE_tc_core0_isr_dummy_entry_176
+                0x80003620                osEE_tc_core0_isr_dummy_entry_177
+                0x80003640                osEE_tc_core0_isr_dummy_entry_178
+                0x80003660                osEE_tc_core0_isr_dummy_entry_179
+                0x80003680                osEE_tc_core0_isr_dummy_entry_180
+                0x800036a0                osEE_tc_core0_isr_dummy_entry_181
+                0x800036c0                osEE_tc_core0_isr_dummy_entry_182
+                0x800036e0                osEE_tc_core0_isr_dummy_entry_183
+                0x80003700                osEE_tc_core0_isr_dummy_entry_184
+                0x80003720                osEE_tc_core0_isr_dummy_entry_185
+                0x80003740                osEE_tc_core0_isr_dummy_entry_186
+                0x80003760                osEE_tc_core0_isr_dummy_entry_187
+                0x80003780                osEE_tc_core0_isr_dummy_entry_188
+                0x800037a0                osEE_tc_core0_isr_dummy_entry_189
+                0x800037c0                osEE_tc_core0_isr_dummy_entry_190
+                0x800037e0                osEE_tc_core0_isr_dummy_entry_191
+                0x80003800                osEE_tc_core0_isr_dummy_entry_192
+                0x80003820                osEE_tc_core0_isr_dummy_entry_193
+                0x80003840                osEE_tc_core0_isr_dummy_entry_194
+                0x80003860                osEE_tc_core0_isr_dummy_entry_195
+                0x80003880                osEE_tc_core0_isr_dummy_entry_196
+                0x800038a0                osEE_tc_core0_isr_dummy_entry_197
+                0x800038c0                osEE_tc_core0_isr_dummy_entry_198
+                0x800038e0                osEE_tc_core0_isr_dummy_entry_199
+                0x80003900                osEE_tc_core0_isr_dummy_entry_200
+                0x80003920                osEE_tc_core0_isr_dummy_entry_201
+                0x80003940                osEE_tc_core0_isr_dummy_entry_202
+                0x80003960                osEE_tc_core0_isr_dummy_entry_203
+                0x80003980                osEE_tc_core0_isr_dummy_entry_204
+                0x800039a0                osEE_tc_core0_isr_dummy_entry_205
+                0x800039c0                osEE_tc_core0_isr_dummy_entry_206
+                0x800039e0                osEE_tc_core0_isr_dummy_entry_207
+                0x80003a00                osEE_tc_core0_isr_dummy_entry_208
+                0x80003a20                osEE_tc_core0_isr_dummy_entry_209
+                0x80003a40                osEE_tc_core0_isr_dummy_entry_210
+                0x80003a60                osEE_tc_core0_isr_dummy_entry_211
+                0x80003a80                osEE_tc_core0_isr_dummy_entry_212
+                0x80003aa0                osEE_tc_core0_isr_dummy_entry_213
+                0x80003ac0                osEE_tc_core0_isr_dummy_entry_214
+                0x80003ae0                osEE_tc_core0_isr_dummy_entry_215
+                0x80003b00                osEE_tc_core0_isr_dummy_entry_216
+                0x80003b20                osEE_tc_core0_isr_dummy_entry_217
+                0x80003b40                osEE_tc_core0_isr_dummy_entry_218
+                0x80003b60                osEE_tc_core0_isr_dummy_entry_219
+                0x80003b80                osEE_tc_core0_isr_dummy_entry_220
+                0x80003ba0                osEE_tc_core0_isr_dummy_entry_221
+                0x80003bc0                osEE_tc_core0_isr_dummy_entry_222
+                0x80003be0                osEE_tc_core0_isr_dummy_entry_223
+                0x80003c00                osEE_tc_core0_isr_dummy_entry_224
+                0x80003c20                osEE_tc_core0_isr_dummy_entry_225
+                0x80003c40                osEE_tc_core0_isr_dummy_entry_226
+                0x80003c60                osEE_tc_core0_isr_dummy_entry_227
+                0x80003c80                osEE_tc_core0_isr_dummy_entry_228
+                0x80003ca0                osEE_tc_core0_isr_dummy_entry_229
+                0x80003cc0                osEE_tc_core0_isr_dummy_entry_230
+                0x80003ce0                osEE_tc_core0_isr_dummy_entry_231
+                0x80003d00                osEE_tc_core0_isr_dummy_entry_232
+                0x80003d20                osEE_tc_core0_isr_dummy_entry_233
+                0x80003d40                osEE_tc_core0_isr_dummy_entry_234
+                0x80003d60                osEE_tc_core0_isr_dummy_entry_235
+                0x80003d80                osEE_tc_core0_isr_dummy_entry_236
+                0x80003da0                osEE_tc_core0_isr_dummy_entry_237
+                0x80003dc0                osEE_tc_core0_isr_dummy_entry_238
+                0x80003de0                osEE_tc_core0_isr_dummy_entry_239
+                0x80003e00                osEE_tc_core0_isr_dummy_entry_240
+                0x80003e20                osEE_tc_core0_isr_dummy_entry_241
+                0x80003e40                osEE_tc_core0_isr_dummy_entry_242
+                0x80003e60                osEE_tc_core0_isr_dummy_entry_243
+                0x80003e80                osEE_tc_core0_isr_dummy_entry_244
+                0x80003ea0                osEE_tc_core0_isr_dummy_entry_245
+                0x80003ec0                osEE_tc_core0_isr_dummy_entry_246
+                0x80003ee0                osEE_tc_core0_isr_dummy_entry_247
+                0x80003f00                osEE_tc_core0_isr_dummy_entry_248
+                0x80003f20                osEE_tc_core0_isr_dummy_entry_249
+                0x80003f40                osEE_tc_core0_isr_dummy_entry_250
+                0x80003f60                osEE_tc_core0_isr_dummy_entry_251
+                0x80003f80                osEE_tc_core0_isr_dummy_entry_252
+                0x80003fa0                osEE_tc_core0_isr_dummy_entry_253
+                0x80003fc0                osEE_tc_core0_isr_dummy_entry_254
+                0x80003fe0                osEE_tc_core0_isr_dummy_entry_255
+ *(.*.inttab_cpu0)
+                0x80004000                . = ALIGN (0x8)
+
+.text           memory region -> PMU_PFLASH
+                0x80004000     0x46a8
+                0x80004000                PROVIDE (__text_start, .)
+ *(.text)
+ .text          0x80004000      0x434 obj/Core0.c.o
+                0x80004208                Func121
+                0x8000420e                Func122
+                0x80004216                Func123
+                0x8000421e                Func111
+                0x80004228                Func112
+                0x80004232                Func11
+                0x80004244                Func12
+                0x80004256                Func131
+                0x8000425e                Func132
+                0x80004266                Func13
+                0x80004274                Func211
+                0x8000427a                Func212
+                0x80004280                Func21
+                0x8000428e                Func221
+                0x80004294                Func222
+                0x8000429c                Func22
+                0x800042aa                Func311
+                0x800042b2                Func312
+                0x800042ba                Func31
+                0x800042c8                Func321
+                0x800042d6                Func322
+                0x800042e4                Func32
+                0x800042f2                Func1
+                0x800042fe                Func2
+                0x80004306                Func3
+                0x8000430e                FuncTaskM
+                0x8000432e                FuncTaskCpu0
+                0x8000433a                ErrorHook
+                0x80004350                main
+ .text          0x80004434       0x24 obj/Core1.c.o
+                0x80004434                FuncTask2
+                0x80004448                FuncTask3
+ .text          0x80004458      0x24a obj/Core2.c.o
+                0x80004660                FuncTASK_1MS
+                0x8000466a                FuncTASK_5MS
+                0x80004674                FuncTASK_10MS
+                0x8000467e                FuncTASK_20MS
+                0x8000468a                FuncTASK_50MS
+                0x80004696                FuncTASK_100MS
+ .text          0x800046a2      0xaee C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+                0x80004754                osEE_tc_core0_start
+                0x80004b30                osEE_tc_core1_start
+                0x80004e60                osEE_tc_core2_start
+ .text          0x80005190      0x53e C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+                0x8000527e                osEE_tricore_system_timer_handler
+                0x800052ae                osEE_tc_initialize_system_timer
+                0x800052f8                osEE_tc_set_pll_fsource
+                0x80005526                osEE_tc_get_fsource
+                0x800055ca                osEE_tc_stm_set_clockpersec
+                0x800055fe                osEE_tc_stm_set_sr1
+                0x80005688                osEE_tc_stm_set_sr1_next_match
+                0x800056a6                osEE_tc_delay
+ .text          0x800056ce       0xae C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .text          0x8000577c     0x1c70 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+                0x8000579a                DisableAllInterrupts
+                0x800057b8                EnableAllInterrupts
+                0x800057ee                SuspendAllInterrupts
+                0x80005844                ResumeAllInterrupts
+                0x80005884                SuspendOSInterrupts
+                0x800058ee                ResumeOSInterrupts
+                0x80005934                StartOS
+                0x80005c68                GetActiveApplicationMode
+                0x80005c8a                ActivateTask
+                0x80005d66                ChainTask
+                0x80005e96                TerminateTask
+                0x80005f56                Schedule
+                0x8000602c                ShutdownOS
+                0x800060aa                GetTaskID
+                0x8000616c                GetTaskState
+                0x80006254                SetRelAlarm
+                0x8000633e                SetAbsAlarm
+                0x80006424                CancelAlarm
+                0x800064e2                GetAlarm
+                0x800065ae                GetAlarmBase
+                0x8000666c                WaitEvent
+                0x80006756                SetEvent
+                0x80006866                GetEvent
+                0x80006936                ClearEvent
+                0x800069d8                GetCounterValue
+                0x80006a92                GetElapsedValue
+                0x80006b76                IncrementCounter
+                0x80006c6e                StartScheduleTableRel
+                0x80006d60                StartScheduleTableAbs
+                0x80006e46                StopScheduleTable
+                0x80006f04                GetScheduleTableStatus
+                0x80006fae                NextScheduleTable
+                0x800070ca                SyncScheduleTable
+                0x800071a8                GetISRID
+                0x800071bc                GetNumberOfActivatedCores
+                0x800071ca                StartCore
+                0x8000726c                StartNonAutosarCore
+                0x800072fa                ShutdownAllCores
+ .text          0x800073ec      0x146 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+                0x800073ec                osEE_scheduler_task_wrapper_restore
+                0x80007434                osEE_scheduler_task_wrapper_run
+                0x800074e6                osEE_idle_hook_wrapper
+ .text          0x80007532       0xf0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+                0x80007532                osEE_scheduler_core_rq_preempt_stk
+                0x800075a4                osEE_sn_priority_insert
+                0x800075ec                osEE_scheduler_rq_insert
+                0x800075fa                osEE_scheduler_core_pop_running
+ .text          0x80007622       0xf2 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+                0x80007622                osEE_task_activated
+                0x80007662                osEE_task_end
+                0x80007680                osEE_task_event_set_mask
+                0x800076f2                osEE_activate_isr2
+ .text          0x80007714      0x392 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+                0x8000773a                osEE_scheduler_task_activated
+                0x8000780c                osEE_scheduler_task_insert
+                0x8000788c                osEE_scheduler_task_block_current
+                0x800078ce                osEE_scheduler_task_unblocked
+                0x8000796e                osEE_scheduler_task_terminated
+                0x80007a10                osEE_scheduler_task_preemption_point
+                0x80007a4e                osEE_scheduler_task_set_running
+ *fill*         0x80007aa6        0x2 00
+ .text          0x80007aa8      0x438 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+                0x80007aa8                osEE_counter_insert_abs_trigger
+                0x80007b0a                osEE_counter_insert_rel_trigger
+                0x80007b2c                osEE_counter_cancel_trigger
+                0x80007b5c                osEE_counter_increment
+ .text          0x80007ee0      0x1be C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+                0x80007ee0                osEE_alarm_set_rel
+                0x80007f6a                osEE_alarm_set_abs
+                0x80007fd8                osEE_alarm_cancel
+                0x80008038                osEE_alarm_get
+ .text          0x8000809e      0x24a C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+                0x8000809e                osEE_st_start_rel
+                0x80008144                osEE_st_start_abs
+                0x800081d0                osEE_st_stop
+                0x8000825a                osEE_st_syncronize
+ .text          0x800082e8       0x6e C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+                0x800082e8                osEE_change_context_from_running
+                0x80008310                osEE_change_context_from_task_end
+                0x80008330                osEE_idle_task_terminate
+ .text          0x80008356      0x11a C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+                0x80008356                osEE_cpu_startos
+ .text          0x80008470       0xf0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+                0x80008470                osEE_hal_sync_barrier
+                0x800084e6                osEE_get_core
+                0x80008512                osEE_hal_start_core
+ .text          0x80008560      0x134 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+                0x80008582                osEE_hal_save_ctx_and_restore_ctx
+                0x800085a6                osEE_hal_restore_ctx
+                0x800085c0                osEE_hal_save_ctx_and_ready2stacked
+                0x800085e4                osEE_hal_ready2stacked
+                0x80008610                osEE_tc_change_context_from_isr2_end
+                0x8000862e                osEE_hal_terminate_ctx
+ *(.text.*)
+ .text._exit    0x80008694       0x10 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+                0x80008694                _exit
+ *(.gnu.linkonce.t.*)
+ *(.gnu.warning)
+                0x800086a8                . = ALIGN (0x8)
+ *fill*         0x800086a4        0x4 00
+
+.sdata3         memory region -> PMU_PFLASH
+                0x800086a8        0x0
+ *(.rodata_a8)
+ *(.rodata_a8.*)
+                0x80008000                _SMALL_DATA3_ = SIZEOF (.sdata3)?(ADDR (.sdata3) + 0x8000):((ADDR (.sdata3) & 0xf0000000) + 0x8000)
+                0x80008000                __A8_MEM = _SMALL_DATA3_
+
+.inttab_cpu1    memory region -> PMU_PFLASH
+                0x8000a000     0x2000
+                0x8000a000                PROVIDE (__INTTAB1, .)
+ *(.inttab_cpu1)
+ .inttab_cpu1   0x8000a000     0x2000 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+                0x8000a000                __INTTAB1
+                0x8000a020                osEE_tc_core1_isr2_entry_1
+                0x8000a040                osEE_tc_core1_isr2_entry_2
+                0x8000a060                osEE_tc_core1_isr_dummy_entry_3
+                0x8000a080                osEE_tc_core1_isr_dummy_entry_4
+                0x8000a0a0                osEE_tc_core1_isr_dummy_entry_5
+                0x8000a0c0                osEE_tc_core1_isr_dummy_entry_6
+                0x8000a0e0                osEE_tc_core1_isr_dummy_entry_7
+                0x8000a100                osEE_tc_core1_isr_dummy_entry_8
+                0x8000a120                osEE_tc_core1_isr_dummy_entry_9
+                0x8000a140                osEE_tc_core1_isr_dummy_entry_10
+                0x8000a160                osEE_tc_core1_isr_dummy_entry_11
+                0x8000a180                osEE_tc_core1_isr_dummy_entry_12
+                0x8000a1a0                osEE_tc_core1_isr_dummy_entry_13
+                0x8000a1c0                osEE_tc_core1_isr_dummy_entry_14
+                0x8000a1e0                osEE_tc_core1_isr_dummy_entry_15
+                0x8000a200                osEE_tc_core1_isr_dummy_entry_16
+                0x8000a220                osEE_tc_core1_isr_dummy_entry_17
+                0x8000a240                osEE_tc_core1_isr_dummy_entry_18
+                0x8000a260                osEE_tc_core1_isr_dummy_entry_19
+                0x8000a280                osEE_tc_core1_isr_dummy_entry_20
+                0x8000a2a0                osEE_tc_core1_isr_dummy_entry_21
+                0x8000a2c0                osEE_tc_core1_isr_dummy_entry_22
+                0x8000a2e0                osEE_tc_core1_isr_dummy_entry_23
+                0x8000a300                osEE_tc_core1_isr_dummy_entry_24
+                0x8000a320                osEE_tc_core1_isr_dummy_entry_25
+                0x8000a340                osEE_tc_core1_isr_dummy_entry_26
+                0x8000a360                osEE_tc_core1_isr_dummy_entry_27
+                0x8000a380                osEE_tc_core1_isr_dummy_entry_28
+                0x8000a3a0                osEE_tc_core1_isr_dummy_entry_29
+                0x8000a3c0                osEE_tc_core1_isr_dummy_entry_30
+                0x8000a3e0                osEE_tc_core1_isr_dummy_entry_31
+                0x8000a400                osEE_tc_core1_isr_dummy_entry_32
+                0x8000a420                osEE_tc_core1_isr_dummy_entry_33
+                0x8000a440                osEE_tc_core1_isr_dummy_entry_34
+                0x8000a460                osEE_tc_core1_isr_dummy_entry_35
+                0x8000a480                osEE_tc_core1_isr_dummy_entry_36
+                0x8000a4a0                osEE_tc_core1_isr_dummy_entry_37
+                0x8000a4c0                osEE_tc_core1_isr_dummy_entry_38
+                0x8000a4e0                osEE_tc_core1_isr_dummy_entry_39
+                0x8000a500                osEE_tc_core1_isr_dummy_entry_40
+                0x8000a520                osEE_tc_core1_isr_dummy_entry_41
+                0x8000a540                osEE_tc_core1_isr_dummy_entry_42
+                0x8000a560                osEE_tc_core1_isr_dummy_entry_43
+                0x8000a580                osEE_tc_core1_isr_dummy_entry_44
+                0x8000a5a0                osEE_tc_core1_isr_dummy_entry_45
+                0x8000a5c0                osEE_tc_core1_isr_dummy_entry_46
+                0x8000a5e0                osEE_tc_core1_isr_dummy_entry_47
+                0x8000a600                osEE_tc_core1_isr_dummy_entry_48
+                0x8000a620                osEE_tc_core1_isr_dummy_entry_49
+                0x8000a640                osEE_tc_core1_isr_dummy_entry_50
+                0x8000a660                osEE_tc_core1_isr_dummy_entry_51
+                0x8000a680                osEE_tc_core1_isr_dummy_entry_52
+                0x8000a6a0                osEE_tc_core1_isr_dummy_entry_53
+                0x8000a6c0                osEE_tc_core1_isr_dummy_entry_54
+                0x8000a6e0                osEE_tc_core1_isr_dummy_entry_55
+                0x8000a700                osEE_tc_core1_isr_dummy_entry_56
+                0x8000a720                osEE_tc_core1_isr_dummy_entry_57
+                0x8000a740                osEE_tc_core1_isr_dummy_entry_58
+                0x8000a760                osEE_tc_core1_isr_dummy_entry_59
+                0x8000a780                osEE_tc_core1_isr_dummy_entry_60
+                0x8000a7a0                osEE_tc_core1_isr_dummy_entry_61
+                0x8000a7c0                osEE_tc_core1_isr_dummy_entry_62
+                0x8000a7e0                osEE_tc_core1_isr_dummy_entry_63
+                0x8000a800                osEE_tc_core1_isr_dummy_entry_64
+                0x8000a820                osEE_tc_core1_isr_dummy_entry_65
+                0x8000a840                osEE_tc_core1_isr_dummy_entry_66
+                0x8000a860                osEE_tc_core1_isr_dummy_entry_67
+                0x8000a880                osEE_tc_core1_isr_dummy_entry_68
+                0x8000a8a0                osEE_tc_core1_isr_dummy_entry_69
+                0x8000a8c0                osEE_tc_core1_isr_dummy_entry_70
+                0x8000a8e0                osEE_tc_core1_isr_dummy_entry_71
+                0x8000a900                osEE_tc_core1_isr_dummy_entry_72
+                0x8000a920                osEE_tc_core1_isr_dummy_entry_73
+                0x8000a940                osEE_tc_core1_isr_dummy_entry_74
+                0x8000a960                osEE_tc_core1_isr_dummy_entry_75
+                0x8000a980                osEE_tc_core1_isr_dummy_entry_76
+                0x8000a9a0                osEE_tc_core1_isr_dummy_entry_77
+                0x8000a9c0                osEE_tc_core1_isr_dummy_entry_78
+                0x8000a9e0                osEE_tc_core1_isr_dummy_entry_79
+                0x8000aa00                osEE_tc_core1_isr_dummy_entry_80
+                0x8000aa20                osEE_tc_core1_isr_dummy_entry_81
+                0x8000aa40                osEE_tc_core1_isr_dummy_entry_82
+                0x8000aa60                osEE_tc_core1_isr_dummy_entry_83
+                0x8000aa80                osEE_tc_core1_isr_dummy_entry_84
+                0x8000aaa0                osEE_tc_core1_isr_dummy_entry_85
+                0x8000aac0                osEE_tc_core1_isr_dummy_entry_86
+                0x8000aae0                osEE_tc_core1_isr_dummy_entry_87
+                0x8000ab00                osEE_tc_core1_isr_dummy_entry_88
+                0x8000ab20                osEE_tc_core1_isr_dummy_entry_89
+                0x8000ab40                osEE_tc_core1_isr_dummy_entry_90
+                0x8000ab60                osEE_tc_core1_isr_dummy_entry_91
+                0x8000ab80                osEE_tc_core1_isr_dummy_entry_92
+                0x8000aba0                osEE_tc_core1_isr_dummy_entry_93
+                0x8000abc0                osEE_tc_core1_isr_dummy_entry_94
+                0x8000abe0                osEE_tc_core1_isr_dummy_entry_95
+                0x8000ac00                osEE_tc_core1_isr_dummy_entry_96
+                0x8000ac20                osEE_tc_core1_isr_dummy_entry_97
+                0x8000ac40                osEE_tc_core1_isr_dummy_entry_98
+                0x8000ac60                osEE_tc_core1_isr_dummy_entry_99
+                0x8000ac80                osEE_tc_core1_isr_dummy_entry_100
+                0x8000aca0                osEE_tc_core1_isr_dummy_entry_101
+                0x8000acc0                osEE_tc_core1_isr_dummy_entry_102
+                0x8000ace0                osEE_tc_core1_isr_dummy_entry_103
+                0x8000ad00                osEE_tc_core1_isr_dummy_entry_104
+                0x8000ad20                osEE_tc_core1_isr_dummy_entry_105
+                0x8000ad40                osEE_tc_core1_isr_dummy_entry_106
+                0x8000ad60                osEE_tc_core1_isr_dummy_entry_107
+                0x8000ad80                osEE_tc_core1_isr_dummy_entry_108
+                0x8000ada0                osEE_tc_core1_isr_dummy_entry_109
+                0x8000adc0                osEE_tc_core1_isr_dummy_entry_110
+                0x8000ade0                osEE_tc_core1_isr_dummy_entry_111
+                0x8000ae00                osEE_tc_core1_isr_dummy_entry_112
+                0x8000ae20                osEE_tc_core1_isr_dummy_entry_113
+                0x8000ae40                osEE_tc_core1_isr_dummy_entry_114
+                0x8000ae60                osEE_tc_core1_isr_dummy_entry_115
+                0x8000ae80                osEE_tc_core1_isr_dummy_entry_116
+                0x8000aea0                osEE_tc_core1_isr_dummy_entry_117
+                0x8000aec0                osEE_tc_core1_isr_dummy_entry_118
+                0x8000aee0                osEE_tc_core1_isr_dummy_entry_119
+                0x8000af00                osEE_tc_core1_isr_dummy_entry_120
+                0x8000af20                osEE_tc_core1_isr_dummy_entry_121
+                0x8000af40                osEE_tc_core1_isr_dummy_entry_122
+                0x8000af60                osEE_tc_core1_isr_dummy_entry_123
+                0x8000af80                osEE_tc_core1_isr_dummy_entry_124
+                0x8000afa0                osEE_tc_core1_isr_dummy_entry_125
+                0x8000afc0                osEE_tc_core1_isr_dummy_entry_126
+                0x8000afe0                osEE_tc_core1_isr_dummy_entry_127
+                0x8000b000                osEE_tc_core1_isr_dummy_entry_128
+                0x8000b020                osEE_tc_core1_isr_dummy_entry_129
+                0x8000b040                osEE_tc_core1_isr_dummy_entry_130
+                0x8000b060                osEE_tc_core1_isr_dummy_entry_131
+                0x8000b080                osEE_tc_core1_isr_dummy_entry_132
+                0x8000b0a0                osEE_tc_core1_isr_dummy_entry_133
+                0x8000b0c0                osEE_tc_core1_isr_dummy_entry_134
+                0x8000b0e0                osEE_tc_core1_isr_dummy_entry_135
+                0x8000b100                osEE_tc_core1_isr_dummy_entry_136
+                0x8000b120                osEE_tc_core1_isr_dummy_entry_137
+                0x8000b140                osEE_tc_core1_isr_dummy_entry_138
+                0x8000b160                osEE_tc_core1_isr_dummy_entry_139
+                0x8000b180                osEE_tc_core1_isr_dummy_entry_140
+                0x8000b1a0                osEE_tc_core1_isr_dummy_entry_141
+                0x8000b1c0                osEE_tc_core1_isr_dummy_entry_142
+                0x8000b1e0                osEE_tc_core1_isr_dummy_entry_143
+                0x8000b200                osEE_tc_core1_isr_dummy_entry_144
+                0x8000b220                osEE_tc_core1_isr_dummy_entry_145
+                0x8000b240                osEE_tc_core1_isr_dummy_entry_146
+                0x8000b260                osEE_tc_core1_isr_dummy_entry_147
+                0x8000b280                osEE_tc_core1_isr_dummy_entry_148
+                0x8000b2a0                osEE_tc_core1_isr_dummy_entry_149
+                0x8000b2c0                osEE_tc_core1_isr_dummy_entry_150
+                0x8000b2e0                osEE_tc_core1_isr_dummy_entry_151
+                0x8000b300                osEE_tc_core1_isr_dummy_entry_152
+                0x8000b320                osEE_tc_core1_isr_dummy_entry_153
+                0x8000b340                osEE_tc_core1_isr_dummy_entry_154
+                0x8000b360                osEE_tc_core1_isr_dummy_entry_155
+                0x8000b380                osEE_tc_core1_isr_dummy_entry_156
+                0x8000b3a0                osEE_tc_core1_isr_dummy_entry_157
+                0x8000b3c0                osEE_tc_core1_isr_dummy_entry_158
+                0x8000b3e0                osEE_tc_core1_isr_dummy_entry_159
+                0x8000b400                osEE_tc_core1_isr_dummy_entry_160
+                0x8000b420                osEE_tc_core1_isr_dummy_entry_161
+                0x8000b440                osEE_tc_core1_isr_dummy_entry_162
+                0x8000b460                osEE_tc_core1_isr_dummy_entry_163
+                0x8000b480                osEE_tc_core1_isr_dummy_entry_164
+                0x8000b4a0                osEE_tc_core1_isr_dummy_entry_165
+                0x8000b4c0                osEE_tc_core1_isr_dummy_entry_166
+                0x8000b4e0                osEE_tc_core1_isr_dummy_entry_167
+                0x8000b500                osEE_tc_core1_isr_dummy_entry_168
+                0x8000b520                osEE_tc_core1_isr_dummy_entry_169
+                0x8000b540                osEE_tc_core1_isr_dummy_entry_170
+                0x8000b560                osEE_tc_core1_isr_dummy_entry_171
+                0x8000b580                osEE_tc_core1_isr_dummy_entry_172
+                0x8000b5a0                osEE_tc_core1_isr_dummy_entry_173
+                0x8000b5c0                osEE_tc_core1_isr_dummy_entry_174
+                0x8000b5e0                osEE_tc_core1_isr_dummy_entry_175
+                0x8000b600                osEE_tc_core1_isr_dummy_entry_176
+                0x8000b620                osEE_tc_core1_isr_dummy_entry_177
+                0x8000b640                osEE_tc_core1_isr_dummy_entry_178
+                0x8000b660                osEE_tc_core1_isr_dummy_entry_179
+                0x8000b680                osEE_tc_core1_isr_dummy_entry_180
+                0x8000b6a0                osEE_tc_core1_isr_dummy_entry_181
+                0x8000b6c0                osEE_tc_core1_isr_dummy_entry_182
+                0x8000b6e0                osEE_tc_core1_isr_dummy_entry_183
+                0x8000b700                osEE_tc_core1_isr_dummy_entry_184
+                0x8000b720                osEE_tc_core1_isr_dummy_entry_185
+                0x8000b740                osEE_tc_core1_isr_dummy_entry_186
+                0x8000b760                osEE_tc_core1_isr_dummy_entry_187
+                0x8000b780                osEE_tc_core1_isr_dummy_entry_188
+                0x8000b7a0                osEE_tc_core1_isr_dummy_entry_189
+                0x8000b7c0                osEE_tc_core1_isr_dummy_entry_190
+                0x8000b7e0                osEE_tc_core1_isr_dummy_entry_191
+                0x8000b800                osEE_tc_core1_isr_dummy_entry_192
+                0x8000b820                osEE_tc_core1_isr_dummy_entry_193
+                0x8000b840                osEE_tc_core1_isr_dummy_entry_194
+                0x8000b860                osEE_tc_core1_isr_dummy_entry_195
+                0x8000b880                osEE_tc_core1_isr_dummy_entry_196
+                0x8000b8a0                osEE_tc_core1_isr_dummy_entry_197
+                0x8000b8c0                osEE_tc_core1_isr_dummy_entry_198
+                0x8000b8e0                osEE_tc_core1_isr_dummy_entry_199
+                0x8000b900                osEE_tc_core1_isr_dummy_entry_200
+                0x8000b920                osEE_tc_core1_isr_dummy_entry_201
+                0x8000b940                osEE_tc_core1_isr_dummy_entry_202
+                0x8000b960                osEE_tc_core1_isr_dummy_entry_203
+                0x8000b980                osEE_tc_core1_isr_dummy_entry_204
+                0x8000b9a0                osEE_tc_core1_isr_dummy_entry_205
+                0x8000b9c0                osEE_tc_core1_isr_dummy_entry_206
+                0x8000b9e0                osEE_tc_core1_isr_dummy_entry_207
+                0x8000ba00                osEE_tc_core1_isr_dummy_entry_208
+                0x8000ba20                osEE_tc_core1_isr_dummy_entry_209
+                0x8000ba40                osEE_tc_core1_isr_dummy_entry_210
+                0x8000ba60                osEE_tc_core1_isr_dummy_entry_211
+                0x8000ba80                osEE_tc_core1_isr_dummy_entry_212
+                0x8000baa0                osEE_tc_core1_isr_dummy_entry_213
+                0x8000bac0                osEE_tc_core1_isr_dummy_entry_214
+                0x8000bae0                osEE_tc_core1_isr_dummy_entry_215
+                0x8000bb00                osEE_tc_core1_isr_dummy_entry_216
+                0x8000bb20                osEE_tc_core1_isr_dummy_entry_217
+                0x8000bb40                osEE_tc_core1_isr_dummy_entry_218
+                0x8000bb60                osEE_tc_core1_isr_dummy_entry_219
+                0x8000bb80                osEE_tc_core1_isr_dummy_entry_220
+                0x8000bba0                osEE_tc_core1_isr_dummy_entry_221
+                0x8000bbc0                osEE_tc_core1_isr_dummy_entry_222
+                0x8000bbe0                osEE_tc_core1_isr_dummy_entry_223
+                0x8000bc00                osEE_tc_core1_isr_dummy_entry_224
+                0x8000bc20                osEE_tc_core1_isr_dummy_entry_225
+                0x8000bc40                osEE_tc_core1_isr_dummy_entry_226
+                0x8000bc60                osEE_tc_core1_isr_dummy_entry_227
+                0x8000bc80                osEE_tc_core1_isr_dummy_entry_228
+                0x8000bca0                osEE_tc_core1_isr_dummy_entry_229
+                0x8000bcc0                osEE_tc_core1_isr_dummy_entry_230
+                0x8000bce0                osEE_tc_core1_isr_dummy_entry_231
+                0x8000bd00                osEE_tc_core1_isr_dummy_entry_232
+                0x8000bd20                osEE_tc_core1_isr_dummy_entry_233
+                0x8000bd40                osEE_tc_core1_isr_dummy_entry_234
+                0x8000bd60                osEE_tc_core1_isr_dummy_entry_235
+                0x8000bd80                osEE_tc_core1_isr_dummy_entry_236
+                0x8000bda0                osEE_tc_core1_isr_dummy_entry_237
+                0x8000bdc0                osEE_tc_core1_isr_dummy_entry_238
+                0x8000bde0                osEE_tc_core1_isr_dummy_entry_239
+                0x8000be00                osEE_tc_core1_isr_dummy_entry_240
+                0x8000be20                osEE_tc_core1_isr_dummy_entry_241
+                0x8000be40                osEE_tc_core1_isr_dummy_entry_242
+                0x8000be60                osEE_tc_core1_isr_dummy_entry_243
+                0x8000be80                osEE_tc_core1_isr_dummy_entry_244
+                0x8000bea0                osEE_tc_core1_isr_dummy_entry_245
+                0x8000bec0                osEE_tc_core1_isr_dummy_entry_246
+                0x8000bee0                osEE_tc_core1_isr_dummy_entry_247
+                0x8000bf00                osEE_tc_core1_isr_dummy_entry_248
+                0x8000bf20                osEE_tc_core1_isr_dummy_entry_249
+                0x8000bf40                osEE_tc_core1_isr_dummy_entry_250
+                0x8000bf60                osEE_tc_core1_isr_dummy_entry_251
+                0x8000bf80                osEE_tc_core1_isr_dummy_entry_252
+                0x8000bfa0                osEE_tc_core1_isr_dummy_entry_253
+                0x8000bfc0                osEE_tc_core1_isr_dummy_entry_254
+                0x8000bfe0                osEE_tc_core1_isr_dummy_entry_255
+ *(.*.inttab_cpu1)
+                0x8000c000                . = ALIGN (0x8)
+
+.inttab_cpu2    memory region -> PMU_PFLASH
+                0x8000c000     0x2000
+                0x8000c000                PROVIDE (__INTTAB2, .)
+ *(.inttab_cpu2)
+ .inttab_cpu2   0x8000c000     0x2000 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+                0x8000c000                __INTTAB2
+                0x8000c020                osEE_tc_core2_isr2_entry_1
+                0x8000c040                osEE_tc_core2_isr2_entry_2
+                0x8000c060                osEE_tc_core2_isr_dummy_entry_3
+                0x8000c080                osEE_tc_core2_isr_dummy_entry_4
+                0x8000c0a0                osEE_tc_core2_isr_dummy_entry_5
+                0x8000c0c0                osEE_tc_core2_isr_dummy_entry_6
+                0x8000c0e0                osEE_tc_core2_isr_dummy_entry_7
+                0x8000c100                osEE_tc_core2_isr_dummy_entry_8
+                0x8000c120                osEE_tc_core2_isr_dummy_entry_9
+                0x8000c140                osEE_tc_core2_isr_dummy_entry_10
+                0x8000c160                osEE_tc_core2_isr_dummy_entry_11
+                0x8000c180                osEE_tc_core2_isr_dummy_entry_12
+                0x8000c1a0                osEE_tc_core2_isr_dummy_entry_13
+                0x8000c1c0                osEE_tc_core2_isr_dummy_entry_14
+                0x8000c1e0                osEE_tc_core2_isr_dummy_entry_15
+                0x8000c200                osEE_tc_core2_isr_dummy_entry_16
+                0x8000c220                osEE_tc_core2_isr_dummy_entry_17
+                0x8000c240                osEE_tc_core2_isr_dummy_entry_18
+                0x8000c260                osEE_tc_core2_isr_dummy_entry_19
+                0x8000c280                osEE_tc_core2_isr_dummy_entry_20
+                0x8000c2a0                osEE_tc_core2_isr_dummy_entry_21
+                0x8000c2c0                osEE_tc_core2_isr_dummy_entry_22
+                0x8000c2e0                osEE_tc_core2_isr_dummy_entry_23
+                0x8000c300                osEE_tc_core2_isr_dummy_entry_24
+                0x8000c320                osEE_tc_core2_isr_dummy_entry_25
+                0x8000c340                osEE_tc_core2_isr_dummy_entry_26
+                0x8000c360                osEE_tc_core2_isr_dummy_entry_27
+                0x8000c380                osEE_tc_core2_isr_dummy_entry_28
+                0x8000c3a0                osEE_tc_core2_isr_dummy_entry_29
+                0x8000c3c0                osEE_tc_core2_isr_dummy_entry_30
+                0x8000c3e0                osEE_tc_core2_isr_dummy_entry_31
+                0x8000c400                osEE_tc_core2_isr_dummy_entry_32
+                0x8000c420                osEE_tc_core2_isr_dummy_entry_33
+                0x8000c440                osEE_tc_core2_isr_dummy_entry_34
+                0x8000c460                osEE_tc_core2_isr_dummy_entry_35
+                0x8000c480                osEE_tc_core2_isr_dummy_entry_36
+                0x8000c4a0                osEE_tc_core2_isr_dummy_entry_37
+                0x8000c4c0                osEE_tc_core2_isr_dummy_entry_38
+                0x8000c4e0                osEE_tc_core2_isr_dummy_entry_39
+                0x8000c500                osEE_tc_core2_isr_dummy_entry_40
+                0x8000c520                osEE_tc_core2_isr_dummy_entry_41
+                0x8000c540                osEE_tc_core2_isr_dummy_entry_42
+                0x8000c560                osEE_tc_core2_isr_dummy_entry_43
+                0x8000c580                osEE_tc_core2_isr_dummy_entry_44
+                0x8000c5a0                osEE_tc_core2_isr_dummy_entry_45
+                0x8000c5c0                osEE_tc_core2_isr_dummy_entry_46
+                0x8000c5e0                osEE_tc_core2_isr_dummy_entry_47
+                0x8000c600                osEE_tc_core2_isr_dummy_entry_48
+                0x8000c620                osEE_tc_core2_isr_dummy_entry_49
+                0x8000c640                osEE_tc_core2_isr_dummy_entry_50
+                0x8000c660                osEE_tc_core2_isr_dummy_entry_51
+                0x8000c680                osEE_tc_core2_isr_dummy_entry_52
+                0x8000c6a0                osEE_tc_core2_isr_dummy_entry_53
+                0x8000c6c0                osEE_tc_core2_isr_dummy_entry_54
+                0x8000c6e0                osEE_tc_core2_isr_dummy_entry_55
+                0x8000c700                osEE_tc_core2_isr_dummy_entry_56
+                0x8000c720                osEE_tc_core2_isr_dummy_entry_57
+                0x8000c740                osEE_tc_core2_isr_dummy_entry_58
+                0x8000c760                osEE_tc_core2_isr_dummy_entry_59
+                0x8000c780                osEE_tc_core2_isr_dummy_entry_60
+                0x8000c7a0                osEE_tc_core2_isr_dummy_entry_61
+                0x8000c7c0                osEE_tc_core2_isr_dummy_entry_62
+                0x8000c7e0                osEE_tc_core2_isr_dummy_entry_63
+                0x8000c800                osEE_tc_core2_isr_dummy_entry_64
+                0x8000c820                osEE_tc_core2_isr_dummy_entry_65
+                0x8000c840                osEE_tc_core2_isr_dummy_entry_66
+                0x8000c860                osEE_tc_core2_isr_dummy_entry_67
+                0x8000c880                osEE_tc_core2_isr_dummy_entry_68
+                0x8000c8a0                osEE_tc_core2_isr_dummy_entry_69
+                0x8000c8c0                osEE_tc_core2_isr_dummy_entry_70
+                0x8000c8e0                osEE_tc_core2_isr_dummy_entry_71
+                0x8000c900                osEE_tc_core2_isr_dummy_entry_72
+                0x8000c920                osEE_tc_core2_isr_dummy_entry_73
+                0x8000c940                osEE_tc_core2_isr_dummy_entry_74
+                0x8000c960                osEE_tc_core2_isr_dummy_entry_75
+                0x8000c980                osEE_tc_core2_isr_dummy_entry_76
+                0x8000c9a0                osEE_tc_core2_isr_dummy_entry_77
+                0x8000c9c0                osEE_tc_core2_isr_dummy_entry_78
+                0x8000c9e0                osEE_tc_core2_isr_dummy_entry_79
+                0x8000ca00                osEE_tc_core2_isr_dummy_entry_80
+                0x8000ca20                osEE_tc_core2_isr_dummy_entry_81
+                0x8000ca40                osEE_tc_core2_isr_dummy_entry_82
+                0x8000ca60                osEE_tc_core2_isr_dummy_entry_83
+                0x8000ca80                osEE_tc_core2_isr_dummy_entry_84
+                0x8000caa0                osEE_tc_core2_isr_dummy_entry_85
+                0x8000cac0                osEE_tc_core2_isr_dummy_entry_86
+                0x8000cae0                osEE_tc_core2_isr_dummy_entry_87
+                0x8000cb00                osEE_tc_core2_isr_dummy_entry_88
+                0x8000cb20                osEE_tc_core2_isr_dummy_entry_89
+                0x8000cb40                osEE_tc_core2_isr_dummy_entry_90
+                0x8000cb60                osEE_tc_core2_isr_dummy_entry_91
+                0x8000cb80                osEE_tc_core2_isr_dummy_entry_92
+                0x8000cba0                osEE_tc_core2_isr_dummy_entry_93
+                0x8000cbc0                osEE_tc_core2_isr_dummy_entry_94
+                0x8000cbe0                osEE_tc_core2_isr_dummy_entry_95
+                0x8000cc00                osEE_tc_core2_isr_dummy_entry_96
+                0x8000cc20                osEE_tc_core2_isr_dummy_entry_97
+                0x8000cc40                osEE_tc_core2_isr_dummy_entry_98
+                0x8000cc60                osEE_tc_core2_isr_dummy_entry_99
+                0x8000cc80                osEE_tc_core2_isr_dummy_entry_100
+                0x8000cca0                osEE_tc_core2_isr_dummy_entry_101
+                0x8000ccc0                osEE_tc_core2_isr_dummy_entry_102
+                0x8000cce0                osEE_tc_core2_isr_dummy_entry_103
+                0x8000cd00                osEE_tc_core2_isr_dummy_entry_104
+                0x8000cd20                osEE_tc_core2_isr_dummy_entry_105
+                0x8000cd40                osEE_tc_core2_isr_dummy_entry_106
+                0x8000cd60                osEE_tc_core2_isr_dummy_entry_107
+                0x8000cd80                osEE_tc_core2_isr_dummy_entry_108
+                0x8000cda0                osEE_tc_core2_isr_dummy_entry_109
+                0x8000cdc0                osEE_tc_core2_isr_dummy_entry_110
+                0x8000cde0                osEE_tc_core2_isr_dummy_entry_111
+                0x8000ce00                osEE_tc_core2_isr_dummy_entry_112
+                0x8000ce20                osEE_tc_core2_isr_dummy_entry_113
+                0x8000ce40                osEE_tc_core2_isr_dummy_entry_114
+                0x8000ce60                osEE_tc_core2_isr_dummy_entry_115
+                0x8000ce80                osEE_tc_core2_isr_dummy_entry_116
+                0x8000cea0                osEE_tc_core2_isr_dummy_entry_117
+                0x8000cec0                osEE_tc_core2_isr_dummy_entry_118
+                0x8000cee0                osEE_tc_core2_isr_dummy_entry_119
+                0x8000cf00                osEE_tc_core2_isr_dummy_entry_120
+                0x8000cf20                osEE_tc_core2_isr_dummy_entry_121
+                0x8000cf40                osEE_tc_core2_isr_dummy_entry_122
+                0x8000cf60                osEE_tc_core2_isr_dummy_entry_123
+                0x8000cf80                osEE_tc_core2_isr_dummy_entry_124
+                0x8000cfa0                osEE_tc_core2_isr_dummy_entry_125
+                0x8000cfc0                osEE_tc_core2_isr_dummy_entry_126
+                0x8000cfe0                osEE_tc_core2_isr_dummy_entry_127
+                0x8000d000                osEE_tc_core2_isr_dummy_entry_128
+                0x8000d020                osEE_tc_core2_isr_dummy_entry_129
+                0x8000d040                osEE_tc_core2_isr_dummy_entry_130
+                0x8000d060                osEE_tc_core2_isr_dummy_entry_131
+                0x8000d080                osEE_tc_core2_isr_dummy_entry_132
+                0x8000d0a0                osEE_tc_core2_isr_dummy_entry_133
+                0x8000d0c0                osEE_tc_core2_isr_dummy_entry_134
+                0x8000d0e0                osEE_tc_core2_isr_dummy_entry_135
+                0x8000d100                osEE_tc_core2_isr_dummy_entry_136
+                0x8000d120                osEE_tc_core2_isr_dummy_entry_137
+                0x8000d140                osEE_tc_core2_isr_dummy_entry_138
+                0x8000d160                osEE_tc_core2_isr_dummy_entry_139
+                0x8000d180                osEE_tc_core2_isr_dummy_entry_140
+                0x8000d1a0                osEE_tc_core2_isr_dummy_entry_141
+                0x8000d1c0                osEE_tc_core2_isr_dummy_entry_142
+                0x8000d1e0                osEE_tc_core2_isr_dummy_entry_143
+                0x8000d200                osEE_tc_core2_isr_dummy_entry_144
+                0x8000d220                osEE_tc_core2_isr_dummy_entry_145
+                0x8000d240                osEE_tc_core2_isr_dummy_entry_146
+                0x8000d260                osEE_tc_core2_isr_dummy_entry_147
+                0x8000d280                osEE_tc_core2_isr_dummy_entry_148
+                0x8000d2a0                osEE_tc_core2_isr_dummy_entry_149
+                0x8000d2c0                osEE_tc_core2_isr_dummy_entry_150
+                0x8000d2e0                osEE_tc_core2_isr_dummy_entry_151
+                0x8000d300                osEE_tc_core2_isr_dummy_entry_152
+                0x8000d320                osEE_tc_core2_isr_dummy_entry_153
+                0x8000d340                osEE_tc_core2_isr_dummy_entry_154
+                0x8000d360                osEE_tc_core2_isr_dummy_entry_155
+                0x8000d380                osEE_tc_core2_isr_dummy_entry_156
+                0x8000d3a0                osEE_tc_core2_isr_dummy_entry_157
+                0x8000d3c0                osEE_tc_core2_isr_dummy_entry_158
+                0x8000d3e0                osEE_tc_core2_isr_dummy_entry_159
+                0x8000d400                osEE_tc_core2_isr_dummy_entry_160
+                0x8000d420                osEE_tc_core2_isr_dummy_entry_161
+                0x8000d440                osEE_tc_core2_isr_dummy_entry_162
+                0x8000d460                osEE_tc_core2_isr_dummy_entry_163
+                0x8000d480                osEE_tc_core2_isr_dummy_entry_164
+                0x8000d4a0                osEE_tc_core2_isr_dummy_entry_165
+                0x8000d4c0                osEE_tc_core2_isr_dummy_entry_166
+                0x8000d4e0                osEE_tc_core2_isr_dummy_entry_167
+                0x8000d500                osEE_tc_core2_isr_dummy_entry_168
+                0x8000d520                osEE_tc_core2_isr_dummy_entry_169
+                0x8000d540                osEE_tc_core2_isr_dummy_entry_170
+                0x8000d560                osEE_tc_core2_isr_dummy_entry_171
+                0x8000d580                osEE_tc_core2_isr_dummy_entry_172
+                0x8000d5a0                osEE_tc_core2_isr_dummy_entry_173
+                0x8000d5c0                osEE_tc_core2_isr_dummy_entry_174
+                0x8000d5e0                osEE_tc_core2_isr_dummy_entry_175
+                0x8000d600                osEE_tc_core2_isr_dummy_entry_176
+                0x8000d620                osEE_tc_core2_isr_dummy_entry_177
+                0x8000d640                osEE_tc_core2_isr_dummy_entry_178
+                0x8000d660                osEE_tc_core2_isr_dummy_entry_179
+                0x8000d680                osEE_tc_core2_isr_dummy_entry_180
+                0x8000d6a0                osEE_tc_core2_isr_dummy_entry_181
+                0x8000d6c0                osEE_tc_core2_isr_dummy_entry_182
+                0x8000d6e0                osEE_tc_core2_isr_dummy_entry_183
+                0x8000d700                osEE_tc_core2_isr_dummy_entry_184
+                0x8000d720                osEE_tc_core2_isr_dummy_entry_185
+                0x8000d740                osEE_tc_core2_isr_dummy_entry_186
+                0x8000d760                osEE_tc_core2_isr_dummy_entry_187
+                0x8000d780                osEE_tc_core2_isr_dummy_entry_188
+                0x8000d7a0                osEE_tc_core2_isr_dummy_entry_189
+                0x8000d7c0                osEE_tc_core2_isr_dummy_entry_190
+                0x8000d7e0                osEE_tc_core2_isr_dummy_entry_191
+                0x8000d800                osEE_tc_core2_isr_dummy_entry_192
+                0x8000d820                osEE_tc_core2_isr_dummy_entry_193
+                0x8000d840                osEE_tc_core2_isr_dummy_entry_194
+                0x8000d860                osEE_tc_core2_isr_dummy_entry_195
+                0x8000d880                osEE_tc_core2_isr_dummy_entry_196
+                0x8000d8a0                osEE_tc_core2_isr_dummy_entry_197
+                0x8000d8c0                osEE_tc_core2_isr_dummy_entry_198
+                0x8000d8e0                osEE_tc_core2_isr_dummy_entry_199
+                0x8000d900                osEE_tc_core2_isr_dummy_entry_200
+                0x8000d920                osEE_tc_core2_isr_dummy_entry_201
+                0x8000d940                osEE_tc_core2_isr_dummy_entry_202
+                0x8000d960                osEE_tc_core2_isr_dummy_entry_203
+                0x8000d980                osEE_tc_core2_isr_dummy_entry_204
+                0x8000d9a0                osEE_tc_core2_isr_dummy_entry_205
+                0x8000d9c0                osEE_tc_core2_isr_dummy_entry_206
+                0x8000d9e0                osEE_tc_core2_isr_dummy_entry_207
+                0x8000da00                osEE_tc_core2_isr_dummy_entry_208
+                0x8000da20                osEE_tc_core2_isr_dummy_entry_209
+                0x8000da40                osEE_tc_core2_isr_dummy_entry_210
+                0x8000da60                osEE_tc_core2_isr_dummy_entry_211
+                0x8000da80                osEE_tc_core2_isr_dummy_entry_212
+                0x8000daa0                osEE_tc_core2_isr_dummy_entry_213
+                0x8000dac0                osEE_tc_core2_isr_dummy_entry_214
+                0x8000dae0                osEE_tc_core2_isr_dummy_entry_215
+                0x8000db00                osEE_tc_core2_isr_dummy_entry_216
+                0x8000db20                osEE_tc_core2_isr_dummy_entry_217
+                0x8000db40                osEE_tc_core2_isr_dummy_entry_218
+                0x8000db60                osEE_tc_core2_isr_dummy_entry_219
+                0x8000db80                osEE_tc_core2_isr_dummy_entry_220
+                0x8000dba0                osEE_tc_core2_isr_dummy_entry_221
+                0x8000dbc0                osEE_tc_core2_isr_dummy_entry_222
+                0x8000dbe0                osEE_tc_core2_isr_dummy_entry_223
+                0x8000dc00                osEE_tc_core2_isr_dummy_entry_224
+                0x8000dc20                osEE_tc_core2_isr_dummy_entry_225
+                0x8000dc40                osEE_tc_core2_isr_dummy_entry_226
+                0x8000dc60                osEE_tc_core2_isr_dummy_entry_227
+                0x8000dc80                osEE_tc_core2_isr_dummy_entry_228
+                0x8000dca0                osEE_tc_core2_isr_dummy_entry_229
+                0x8000dcc0                osEE_tc_core2_isr_dummy_entry_230
+                0x8000dce0                osEE_tc_core2_isr_dummy_entry_231
+                0x8000dd00                osEE_tc_core2_isr_dummy_entry_232
+                0x8000dd20                osEE_tc_core2_isr_dummy_entry_233
+                0x8000dd40                osEE_tc_core2_isr_dummy_entry_234
+                0x8000dd60                osEE_tc_core2_isr_dummy_entry_235
+                0x8000dd80                osEE_tc_core2_isr_dummy_entry_236
+                0x8000dda0                osEE_tc_core2_isr_dummy_entry_237
+                0x8000ddc0                osEE_tc_core2_isr_dummy_entry_238
+                0x8000dde0                osEE_tc_core2_isr_dummy_entry_239
+                0x8000de00                osEE_tc_core2_isr_dummy_entry_240
+                0x8000de20                osEE_tc_core2_isr_dummy_entry_241
+                0x8000de40                osEE_tc_core2_isr_dummy_entry_242
+                0x8000de60                osEE_tc_core2_isr_dummy_entry_243
+                0x8000de80                osEE_tc_core2_isr_dummy_entry_244
+                0x8000dea0                osEE_tc_core2_isr_dummy_entry_245
+                0x8000dec0                osEE_tc_core2_isr_dummy_entry_246
+                0x8000dee0                osEE_tc_core2_isr_dummy_entry_247
+                0x8000df00                osEE_tc_core2_isr_dummy_entry_248
+                0x8000df20                osEE_tc_core2_isr_dummy_entry_249
+                0x8000df40                osEE_tc_core2_isr_dummy_entry_250
+                0x8000df60                osEE_tc_core2_isr_dummy_entry_251
+                0x8000df80                osEE_tc_core2_isr_dummy_entry_252
+                0x8000dfa0                osEE_tc_core2_isr_dummy_entry_253
+                0x8000dfc0                osEE_tc_core2_isr_dummy_entry_254
+                0x8000dfe0                osEE_tc_core2_isr_dummy_entry_255
+ *(.*.inttab_cpu2)
+                0x8000e000                . = ALIGN (0x8)
+
+.zdata          memory region -> DMI_DSPR0
+                0x70000000        0x0 load address 0x8000e000
+ *(.zdata)
+ *(.zdata.*)
+ *(.gnu.linkonce.z.*)
+
+.zbss           memory region -> DMI_DSPR0
+                0x70000000        0x0 load address 0x8000e000
+ *(.zbss)
+ *(.zbss.*)
+ *(.bbss)
+ *(.bbss.*)
+ *(.gnu.linkonce.zb.*)
+
+.sdata          memory region -> DMI_DSPR0
+                0x70000000        0x0 load address 0x8000e000
+ *(.sdata)
+ *(.sdata.*)
+                0x70008000                _SMALL_DATA_ = SIZEOF (.sdata)?(ADDR (.sdata) + 0x8000):((ADDR (.sdata) & 0xf0000000) + 0x8000)
+                0x70008000                __A0_MEM = _SMALL_DATA_
+
+.sbss           memory region -> DMI_DSPR0
+                0x70000000        0x0 load address 0x8000e000
+ *(.sbss)
+ *(.sbss.*)
+
+.data           memory region -> DMI_DSPR0
+                0x70000000       0x10 load address 0x8000e000
+ *(.data)
+ .data          0x70000000       0x10 obj/ee_applcfg.c.o
+                0x70000000                osEE_kcb_var
+ *(.data.*)
+ *(.gnu.linkonce.d.*)
+
+.bss            memory region -> DMI_DSPR0
+                0x70000010       0x10 load address 0x8000e010
+ *(.bss)
+ .bss           0x70000010        0x8 obj/Core0.c.o
+                0x70000010                myErrorCounter
+ .bss           0x70000018        0x8 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ *(.bss.*)
+ *(.gnu.linkonce.b.*)
+
+.heap           memory region -> DMI_DSPR0
+                0x70000020        0x0 load address 0x8000e010
+                0x70000020                PROVIDE (__HEAP, .)
+                0x70000020                . = (. + __HEAP_SIZE)
+                0x70000020                PROVIDE (__HEAP_END, .)
+
+.CPU2.zdata     memory region -> DMI_DSPR2
+                0x50000000        0x0 load address 0x8000e010
+ *(.zdata_cpu2)
+ *(.zdata_cpu2.*)
+
+.CPU2.zbss      memory region -> DMI_DSPR2
+                0x50000000        0x0 load address 0x8000e010
+ *(.zbss_cpu2)
+ *(.zbss_cpu2.*)
+
+.CPU2.data      memory region -> DMI_DSPR2
+                0x50000000       0xf8 load address 0x8000e010
+ *(.data_cpu2)
+ .data_cpu2     0x50000000       0xf8 obj/ee_applcfg.c.o
+                0x50000000                osEE_ccb_var_core2
+ *(.data_cpu2.*)
+
+.CPU2.bss       memory region -> DMI_DSPR2
+                0x500000f8       0x2c load address 0x8000e108
+ *(.bss_cpu2)
+ .bss_cpu2      0x500000f8       0x2c obj/ee_applcfg.c.o
+ *(.bss_cpu2.*)
+
+.CPU2.ustack    memory region -> DMI_DSPR2
+                0x5001a600     0x1000 load address 0x8000e108
+                0x5001a600                __USTACK2_AREA_END = .
+ *(.ustack_cpu2)
+ .ustack_cpu2   0x5001a600      0x330 obj/ee_applcfg.c.o
+                0x5001a930                PROVIDE (__USTACK2_END, .)
+                0x5001b600                . = (__USTACK2_AREA_END + __USTACK2_SIZE)
+ *fill*         0x5001a930      0xcd0 00
+                0x5001b600                . = ALIGN (0x8)
+                0x5001b600                PROVIDE (__USTACK2, .)
+
+.CPU2.istack    memory region -> DMI_DSPR2
+                0x5001b700      0x400 load address 0x8000e108
+                0x5001b700                PROVIDE (__ISTACK2_END, .)
+                0x5001bb00                . = (. + __ISTACK2_SIZE)
+ *fill*         0x5001b700      0x400 00
+                0x5001bb00                PROVIDE (__ISTACK2, .)
+
+.CPU2.csa       memory region -> DMI_DSPR2
+                0x5001bc00     0x2000 load address 0x8000e140
+                0x5001bc00                PROVIDE (__CSA2, .)
+                0x5001dc00                . = (. + __CSA2_SIZE)
+ *fill*         0x5001bc00     0x2000 00
+                0x5001dc00                PROVIDE (__CSA2_END, .)
+
+.CPU2.psram_text memory region -> PMI_PSPR2
+                0x50100000        0x0 load address 0x8000e108
+ *(.psram_cpu2)
+ *(.cpu2_psram)
+
+.CPU1.zdata     memory region -> DMI_DSPR1
+                0x60000000        0x0 load address 0x8000e108
+ *(.zdata_cpu1)
+ *(.zdata_cpu1.*)
+
+.CPU1.zbss      memory region -> DMI_DSPR1
+                0x60000000        0x0 load address 0x8000e108
+ *(.zbss_cpu1)
+ *(.zbss_cpu1.*)
+
+.CPU1.data      memory region -> DMI_DSPR1
+                0x60000000       0x88 load address 0x8000e108
+ *(.data_cpu1)
+ .data_cpu1     0x60000000       0x88 obj/ee_applcfg.c.o
+                0x60000000                osEE_ccb_var_core1
+ *(.data_cpu1.*)
+
+.CPU1.bss       memory region -> DMI_DSPR1
+                0x60000088       0x1c load address 0x8000e190
+ *(.bss_cpu1)
+ .bss_cpu1      0x60000088       0x1c obj/ee_applcfg.c.o
+ *(.bss_cpu1.*)
+
+.CPU1.ustack    memory region -> DMI_DSPR1
+                0x6001a600     0x1000 load address 0x8000e190
+                0x6001a600                __USTACK1_AREA_END = .
+ *(.ustack_cpu1)
+ .ustack_cpu1   0x6001a600      0x210 obj/ee_applcfg.c.o
+                0x6001a810                PROVIDE (__USTACK1_END, .)
+                0x6001b600                . = (__USTACK1_AREA_END + __USTACK1_SIZE)
+ *fill*         0x6001a810      0xdf0 00
+                0x6001b600                . = ALIGN (0x8)
+                0x6001b600                PROVIDE (__USTACK1, .)
+
+.CPU1.istack    memory region -> DMI_DSPR1
+                0x6001b700      0x400 load address 0x8000e190
+                0x6001b700                PROVIDE (__ISTACK1_END, .)
+                0x6001bb00                . = (. + __ISTACK1_SIZE)
+ *fill*         0x6001b700      0x400 00
+                0x6001bb00                PROVIDE (__ISTACK1, .)
+
+.CPU1.csa       memory region -> DMI_DSPR1
+                0x6001bc00     0x2000 load address 0x8000e1c0
+                0x6001bc00                PROVIDE (__CSA1, .)
+                0x6001dc00                . = (. + __CSA1_SIZE)
+ *fill*         0x6001bc00     0x2000 00
+                0x6001dc00                PROVIDE (__CSA1_END, .)
+
+.CPU1.psram_text memory region -> PMI_PSPR1
+                0x60100000        0x0 load address 0x8000e190
+ *(.psram_cpu1)
+ *(.cpu1_psram)
+
+.CPU0.zdata     memory region -> DMI_DSPR0
+                0x70000020        0x0 load address 0x8000e190
+ *(.zdata_cpu0)
+ *(.zdata_cpu0.*)
+
+.CPU0.zbss      memory region -> DMI_DSPR0
+                0x70000020        0x0 load address 0x8000e190
+ *(.zbss_cpu0)
+ *(.zbss_cpu0.*)
+
+.CPU0.data      memory region -> DMI_DSPR0
+                0x70000020       0x88 load address 0x8000e190
+ *(.data_cpu0)
+ .data_cpu0     0x70000020       0x88 obj/ee_applcfg.c.o
+                0x70000020                osEE_ccb_var_core0
+ *(.data_cpu0.*)
+
+.CPU0.bss       memory region -> DMI_DSPR0
+                0x700000a8       0x1c load address 0x8000e218
+ *(.bss_cpu0)
+ .bss_cpu0      0x700000a8       0x1c obj/ee_applcfg.c.o
+ *(.bss_cpu0.*)
+
+.CPU0.ustack    memory region -> DMI_DSPR0
+                0x70018600     0x1000 load address 0x8000e218
+                0x70018600                __USTACK0_AREA_END = .
+ *(.ustack_cpu0)
+ .ustack_cpu0   0x70018600      0x210 obj/ee_applcfg.c.o
+                0x70018810                PROVIDE (__USTACK0_END, .)
+                0x70019600                . = (__USTACK0_AREA_END + __USTACK0_SIZE)
+ *fill*         0x70018810      0xdf0 00
+                0x70019600                . = ALIGN (0x8)
+                0x70019600                PROVIDE (__USTACK0, .)
+
+.CPU0.istack    memory region -> DMI_DSPR0
+                0x70019700      0x400 load address 0x8000e218
+                0x70019700                PROVIDE (__ISTACK0_END, .)
+                0x70019b00                . = (. + __ISTACK0_SIZE)
+ *fill*         0x70019700      0x400 00
+                0x70019b00                PROVIDE (__ISTACK0, .)
+
+.CPU0.csa       memory region -> DMI_DSPR0
+                0x70019c00     0x2000 load address 0x8000e240
+                0x70019c00                PROVIDE (__CSA0, .)
+                0x7001bc00                . = (. + __CSA0_SIZE)
+ *fill*         0x70019c00     0x2000 00
+                0x7001bc00                PROVIDE (__CSA0_END, .)
+
+.CPU0.psram_text memory region -> PMI_PSPR0
+                0x70100000        0x0 load address 0x8000e218
+ *(.psram_cpu0)
+ *(.cpu0_psram)
+
+.lmu_zdata      memory region -> LMU_SRAM_nc
+                0xb0000000        0x0 load address 0x8000e218
+ *(.zdata_lmu)
+ *(.zdata_lmu.*)
+
+.lmu_zbss       memory region -> LMU_SRAM_nc
+                0xb0000000        0x0 load address 0x8000e218
+ *(.zbss_lmu)
+ *(.zbss_lmu.*)
+
+.lmu_sdata      memory region -> LMU_SRAM_nc
+                0xb0000000        0x0 load address 0x8000e218
+ *(.sdata_lmu)
+ *(.sdata_lmu.*)
+
+.lmu_sbss       memory region -> LMU_SRAM_nc
+                0xb0000000        0x0 load address 0x8000e218
+ *(.sbss_lmu)
+ *(.sbss_lmu.*)
+                0xb0008000                _SMALL_DATA4_ = SIZEOF (.lmu_sdata)?(ADDR (.lmu_sdata) + 0x8000):((ADDR (.lmu_sdata) & 0xf0000000) + 0x8000)
+                0xb0008000                __A9_MEM = _SMALL_DATA4_
+
+.lmu_data       memory region -> LMU_SRAM_nc
+                0xb0000000        0x0 load address 0x8000e218
+ *(.lmu_data)
+ *(.lmu_data.*)
+ *(.data_lmu)
+ *(.data_lmu.*)
+ *(.lmudata)
+ *(.lmudata.*)
+
+.lmu_bss        memory region -> LMU_SRAM_nc
+                0xb0000000        0x8 load address 0x8000e218
+ *(.lmu_bss)
+ *(.lmu_bss.*)
+ *(.bss_lmu)
+ .bss_lmu       0xb0000000        0x8 obj/ee_applcfg.c.o
+ *(.bss_lmu.*)
+ *(.lmubss)
+ *(.lmubss.*)
+                [0x00000000]                NULL = DEFINED (NULL)?NULL:0x0
+
+.comment        memory region -> *default*
+                0x00000000       0x53
+ *(.comment)
+ .comment       0x00000000       0x53 obj/Core0.c.o
+                                 0x54 (size before relaxing)
+ .comment       0x00000000       0x54 obj/Core1.c.o
+ .comment       0x00000000       0x54 obj/Core2.c.o
+ .comment       0x00000000       0x54 obj/ee_applcfg.c.o
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .comment       0x00000000       0x54 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .comment       0x00000000       0x54 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  memory region -> *default*
+                0x00000000      0x298
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 obj/Core0.c.o
+ .debug_aranges
+                0x00000020       0x20 obj/Core1.c.o
+ .debug_aranges
+                0x00000040       0x20 obj/Core2.c.o
+ .debug_aranges
+                0x00000060       0x18 obj/ee_applcfg.c.o
+ .debug_aranges
+                0x00000078       0x28 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_aranges
+                0x000000a0       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_aranges
+                0x000000c0       0x18 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .debug_aranges
+                0x000000d8       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_aranges
+                0x000000f8       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_aranges
+                0x00000118       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_aranges
+                0x00000138       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_aranges
+                0x00000158       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_aranges
+                0x00000178       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_aranges
+                0x00000198       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_aranges
+                0x000001b8       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_aranges
+                0x000001d8       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .debug_aranges
+                0x000001f8       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_aranges
+                0x00000218       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_aranges
+                0x00000238       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .debug_aranges
+                0x00000258       0x20 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_aranges
+                0x00000278       0x20 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     memory region -> *default*
+                0x00000000    0x369d1
+ *(.debug_info)
+ .debug_info    0x00000000     0x1483 obj/Core0.c.o
+ .debug_info    0x00001483      0x5e8 obj/Core1.c.o
+ .debug_info    0x00001a6b      0xa3c obj/Core2.c.o
+ .debug_info    0x000024a7     0x2fed obj/ee_applcfg.c.o
+ .debug_info    0x00005494     0x46f3 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_info    0x00009b87     0x3270 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_info    0x0000cdf7     0x1517 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .debug_info    0x0000e30e     0x27a3 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_info    0x00010ab1     0xa46a C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_info    0x0001af1b     0x2a44 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_info    0x0001d95f     0x25b0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_info    0x0001ff0f     0x25b0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_info    0x000224bf     0x33c8 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_info    0x00025887     0x3236 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_info    0x00028abd     0x2be0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_info    0x0002b69d     0x2b96 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .debug_info    0x0002e233     0x17f9 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_info    0x0002fa2c     0x256d C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_info    0x00031f99     0x2568 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .debug_info    0x00034501     0x2230 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_info    0x00036731      0x2a0 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug_abbrev   memory region -> *default*
+                0x00000000     0x3b17
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x30b obj/Core0.c.o
+ .debug_abbrev  0x0000030b       0xc8 obj/Core1.c.o
+ .debug_abbrev  0x000003d3      0x19d obj/Core2.c.o
+ .debug_abbrev  0x00000570      0x17e obj/ee_applcfg.c.o
+ .debug_abbrev  0x000006ee      0x3d7 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_abbrev  0x00000ac5      0x38d C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_abbrev  0x00000e52      0x12e C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .debug_abbrev  0x00000f80      0x2cf C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_abbrev  0x0000124f      0x525 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_abbrev  0x00001774      0x396 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_abbrev  0x00001b0a      0x2f5 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_abbrev  0x00001dff      0x33d C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_abbrev  0x0000213c      0x42e C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_abbrev  0x0000256a      0x434 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_abbrev  0x0000299e      0x327 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_abbrev  0x00002cc5      0x35d C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .debug_abbrev  0x00003022      0x1e2 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_abbrev  0x00003204      0x29d C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_abbrev  0x000034a1      0x2bb C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .debug_abbrev  0x0000375c      0x357 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_abbrev  0x00003ab3       0x64 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug_line     memory region -> *default*
+                0x00000000     0x49dc
+ *(.debug_line)
+ .debug_line    0x00000000      0x296 obj/Core0.c.o
+ .debug_line    0x00000296      0x116 obj/Core1.c.o
+ .debug_line    0x000003ac      0x1ee obj/Core2.c.o
+ .debug_line    0x0000059a      0x15a obj/ee_applcfg.c.o
+ .debug_line    0x000006f4      0x673 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_line    0x00000d67      0x3ad C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_line    0x00001114      0x166 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .debug_line    0x0000127a      0x299 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_line    0x00001513     0x141b C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_line    0x0000292e      0x2cc C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_line    0x00002bfa      0x251 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_line    0x00002e4b      0x267 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_line    0x000030b2      0x482 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_line    0x00003534      0x438 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_line    0x0000396c      0x315 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_line    0x00003c81      0x336 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .debug_line    0x00003fb7      0x1f1 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_line    0x000041a8      0x291 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_line    0x00004439      0x242 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .debug_line    0x0000467b      0x2ed C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_line    0x00004968       0x74 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug_frame    memory region -> *default*
+                0x00000000      0xcf8
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x1f8 obj/Core0.c.o
+ .debug_frame   0x000001f8       0x30 obj/Core1.c.o
+ .debug_frame   0x00000228       0x80 obj/Core2.c.o
+ .debug_frame   0x000002a8       0x68 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_frame   0x00000310      0x118 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_frame   0x00000428       0x28 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_frame   0x00000450      0x3b8 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_frame   0x00000808       0x58 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_frame   0x00000860       0x70 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_frame   0x000008d0       0x70 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_frame   0x00000940       0xd0 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_frame   0x00000a10       0x88 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_frame   0x00000a98       0x70 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_frame   0x00000b08       0x70 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .debug_frame   0x00000b78       0x58 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_frame   0x00000bd0       0x28 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_frame   0x00000bf8       0x58 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .debug_frame   0x00000c50       0x88 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_frame   0x00000cd8       0x20 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug_str      memory region -> *default*
+                0x00000000      0x874
+ *(.debug_str)
+ .debug_str     0x00000000       0x2e obj/Core0.c.o
+ .debug_str     0x0000002e        0x0 obj/Core1.c.o
+ .debug_str     0x0000002e        0x0 obj/Core2.c.o
+ .debug_str     0x0000002e       0x39 obj/ee_applcfg.c.o
+ .debug_str     0x00000067       0xee C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_str     0x00000155       0x6e C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_str     0x000001c3       0x1a C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_trapvec.c.o)
+ .debug_str     0x000001dd       0x4b C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_str     0x00000228      0x12c C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_str     0x00000354       0x73 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_str     0x000003c7       0x60 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_str     0x00000427       0x57 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_str     0x0000047e       0xb9 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_str     0x00000537       0xea C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_str     0x00000621       0x9e C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_str     0x000006bf       0xc7 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .debug_str     0x00000786       0x23 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_str     0x000007a9       0x39 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_str     0x000007e2       0x4b C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .debug_str     0x0000082d       0x47 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_str     0x00000874        0x0 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug_loc      memory region -> *default*
+                0x00000000     0x8d53
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x152 obj/Core0.c.o
+ .debug_loc     0x00000152       0xd6 obj/Core2.c.o
+ .debug_loc     0x00000228     0x133b C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_loc     0x00001563      0x804 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_system.c.o)
+ .debug_loc     0x00001d67      0x188 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_intvec.c.o)
+ .debug_loc     0x00001eef     0x3cb5 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_loc     0x00005ba4      0x1bd C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_entry_points.c.o)
+ .debug_loc     0x00005d61      0x4b4 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_loc     0x00006215      0x1b8 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_kernel.c.o)
+ .debug_loc     0x000063cd      0x885 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_sched_partitioned.c.o)
+ .debug_loc     0x00006c52      0xd24 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_loc     0x00007976      0x58a C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_alarm.c.o)
+ .debug_loc     0x00007f00      0x61e C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_ar_sched_table.c.o)
+ .debug_loc     0x0000851e      0x207 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_std_change_context.c.o)
+ .debug_loc     0x00008725      0x1e5 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_loc     0x0000890a      0x190 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal_mc.c.o)
+ .debug_loc     0x00008a9a      0x2b9 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   memory region -> *default*
+                0x00000000      0x9f0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x58 obj/Core0.c.o
+ .debug_ranges  0x00000058       0x18 obj/Core2.c.o
+ .debug_ranges  0x00000070      0x410 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_cstart.c.o)
+ .debug_ranges  0x00000480      0x3b8 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_api_osek.c.o)
+ .debug_ranges  0x00000838       0x48 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_scheduler.c.o)
+ .debug_ranges  0x00000880      0x110 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_oo_counter.c.o)
+ .debug_ranges  0x00000990       0x38 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_hal.c.o)
+ .debug_ranges  0x000009c8       0x18 C:\Users\PC\ECLIPS~2\DEMO_E~2\erika\lib\libee.a(ee_tc_ctx.c.o)
+ .debug_ranges  0x000009e0       0x10 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.version_info   memory region -> *default*
+                0x00000000     0x1333
+ *(.version_info)
+ .version_info  0x00000000     0x1333 c:/hightec/toolch~1/tricore/v4910-~1.0/bin/../lib/gcc/tricore/4.9.4/../../../../tricore/lib/tc161\libos.a(libos_exit.o)
+
+.boffs
+ *(.boffs)
+                0x00000001                _. = ASSERT ((__TRICORE_DERIVATE_MEMORY_MAP__ == __TRICORE_DERIVATE_NAME__), Using wrong Memory Map. This Map is for TC27x)
+                0x00000001                _. = ASSERT ((_start == 0x80000020), _start is not in the right place)
+                0x00000001                _. = ASSERT (((__CSA0 & 0x3f) == 0x0), 1llegal CSA0 start address)
+                0x00000001                _. = ASSERT (((__CSA0_SIZE & 0x3f) == 0x0), Illegal CSA0 size)
+                0x00000001                _. = ASSERT (((__ISTACK0 & 0x7) == 0x0), ISTACK0 not doubleword aligned)
+                0x00000001                _. = ASSERT (((__USTACK0 & 0x7) == 0x0), USTACK0 not doubleword aligned)
+                0x00000001                _. = ASSERT (((__CSA1 & 0x3f) == 0x0), 1llegal CSA1 start address)
+                0x00000001                _. = ASSERT (((__CSA1_SIZE & 0x3f) == 0x0), Illegal CSA1 size)
+                0x00000001                _. = ASSERT (((__ISTACK1 & 0x7) == 0x0), ISTACK1 not doubleword aligned)
+                0x00000001                _. = ASSERT (((__USTACK1 & 0x7) == 0x0), USTACK1 not doubleword aligned)
+                0x00000001                _. = ASSERT (((__CSA2 & 0x3f) == 0x0), 1llegal CSA2 start address)
+                0x00000001                _. = ASSERT (((__CSA2_SIZE & 0x3f) == 0x0), Illegal CSA2 size)
+                0x00000001                _. = ASSERT (((__ISTACK2 & 0x7) == 0x0), ISTACK2 not doubleword aligned)
+                0x00000001                _. = ASSERT (((__USTACK2 & 0x7) == 0x0), USTACK2 not doubleword aligned)
+                0x00000001                _. = ASSERT (((__HEAP_END & 0x7) == 0x0), HEAP not doubleword aligned)
+OUTPUT(erika3app.elf elf32-tricore)

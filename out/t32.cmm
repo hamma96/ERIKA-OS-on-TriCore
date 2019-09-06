@@ -1,0 +1,151 @@
+; @Title: Demo script for TC275TF on TriBoard-TC2x5 (Flash, sieve app)
+; @Description:
+;   Programs the sieve demo application (single-core) into the processor
+;   internal flash and sets up a demo debug scenario. This script can be used
+;   as a template for flashing an application.
+; @Keywords: AURIX, flash, Infineon, TriCore
+; @Author: MOB
+; @Board: TriBoard-TC2x5
+; @Chip: TC275TF
+; @Copyright: (C) 1989-2016 Lauterbach GmbH, licensed for use with TRACE32(R) only
+; --------------------------------------------------------------------------------
+; $Id: tc275tf_demo_flash.cmm 9873 2016-08-29 08:35:27Z meick $
+
+; N.B: Above original header, needed for copyright fulfillmenet.
+; Script modified to obtain a template to generate scripts to flash ERIKA's
+; application into infineon tc2nx MCUs.
+;
+; This script is for tc277tf
+;
+; @Description:
+;   Programs application into the processor internal flash.
+
+; --------------------------------------------------------------------------------
+; initialize and start the debugger
+RESet
+SYStem.CPU tc277tf
+
+IF ((ID.CABLE()==0x29)||(ID.CABLE()==0x4155)||(ID.CABLE()==0x00D1))
+(
+  ; Emulation Devices in LQFP packages (except Fusion Quad and TC27x A-Step)
+  ; do not support JTAG (TDI pin is used as VDDPSB)
+  ; DAP only supported by
+  ; - Bi-directional OCDS Debug Cable (0x29)
+  ; - Automotive Debug Cable (0x4155)
+  ; See tricore_app_ocds.pdf for details
+  SYStem.CONFIG.DEBUGPORTTYPE DAP2
+)
+ELSE
+(
+  DIALOG.OK "tc277tf not supported by " + CABLE.NAME() +
+  " For details see TriCore FAQ"
+  ENDDO
+)
+CORE.ASSIGN 1. 2. 3. // assign cores to the SMP system
+SYStem.Up
+
+; optional settings:
+SYStem.Option DUALPORT ON
+SETUP.Var %SpotLight
+MAP.BOnchip 0x0--0xffffffff // force onchip-breakpoints
+
+; --------------------------------------------------------------------------------
+; Flash programming
+LOCAL &elfFile &progFlash &bmhdResult
+&elfFile="~~~~/erika3app.elf"
+
+; prepare flash programming (declarations)
+DO ~~/demo/tricore/flash/tc27x.cmm CPU=tc277tf PREPAREONLY
+
+; check if application is already in flash and load symbols
+Data.LOAD.Elf "&elfFile" /DIFF /SingleLineAdjacent
+IF FOUND()
+(
+  DIALOG.YESNO "Program ERIKA's application into flash memory?"
+  ENTRY &progFlash
+  IF (&progFlash)
+  (
+    ; enable flash programming
+    FLASH.ReProgram ALL
+
+    ; load demo application
+    Data.LOAD.Elf "&elfFile"
+
+    ; check if there is at least one valid Boot Mode Header
+    DO ~~/demo/tricore/flash/tc27x.cmm CHECKBMHD
+    ENTRY &bmhdResult
+    IF ("&bmhdResult"=="BMHD_OK")
+    (
+      ; finally program flash memory
+      FLASH.ReProgram off
+
+      ; sanity check after flashing
+      Data.LOAD.Elf "&elfFile" /DIFF
+      IF FOUND()
+      (
+        ; maybe some sections are still declared as NOP?
+        PRIVATE &diffAddress
+        &diffAddress=TRACK.ADDRESS()
+        DIALOG.MESSAGE "File &elfFile has not been fully flashed, difference found at address &diffAddress (check flash declaration)"
+      )
+    )
+    ELSE
+    (
+      DIALOG.OK "No valid Boot Mode Header found!" "Reverting loaded data"
+      FLASH.ReProgram ALL
+      FLASH.ReProgram off
+      ENDDO
+    )
+  )
+)
+
+IF (Analyzer()||(Onchip.STATE()!=5.))
+(
+  ; enable TriCore core 1 for flow trace (core 0 is enabled by default)
+  MCDS.SOURCE.Set CpuMux1.Core TriCore1
+  MCDS.SOURCE.Set CpuMux1.Program ON
+  MCDS.SOURCE.Set CpuMux1.PTMode FlowTrace
+)
+; --------------------------------------------------------------------------------
+; open some windows
+WinCLEAR
+WinPOS 0% 0% 33% 33%
+TargetSystem.state
+WinPOS 33% 0% 33% 33%
+List.auto
+WinPOS 0% 33% 33% 33%
+List.auto /CORE 0.
+IF (CORENUMBER()>1.)
+(
+  WinPOS 33% 33% 33% 33%
+  List.auto /CORE 1.
+  
+  IF (CORENUMBER()>2.)
+  (
+    WinPOS 66% 33% 33% 33%
+    List.auto /CORE 2.
+  )
+)
+Trace.Chart.TASK
+TASK.ORTI system.orti
+
+MCDS.SOURCE.Set CpuMux0.Program OFF
+MCDS.SOURCE.Set CpuMux0.WriteAddr ON
+MCDS.SOURCE.Set CpuMux0.WriteData ON
+
+Break.Set TASK.CONFIG(magic[0]) /Write /TraceData
+
+MCDS.SOURCE.Set CpuMux1.Program OFF
+MCDS.SOURCE.Set CpuMux1.WriteAddr ON
+MCDS.SOURCE.Set CpuMux1.WriteData ON
+
+Break.Set TASK.CONFIG(magic[1]) /Write /TraceEnable
+Break.Set TASK.CONFIG(magic[2]) /Write /TraceEnable
+trace.method onchip
+mcds.TimeStamp ON 
+CLOCK.ON 
+; --------------------------------------------------------------------------------
+; start program execution
+;Go.direct main
+
+ENDDO

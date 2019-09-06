@@ -1,0 +1,624 @@
+	.file	"Core1.c"
+.section .text,"ax",@progbits
+.Ltext0:
+	.align 1
+	.global	FuncTask2
+	.type	FuncTask2, @function
+FuncTask2:
+.LFB48:
+	.file 1 "C:\\Users\\PC\\ECLIPS~2\\DEMO_E~2\\Core1.c"
+	.loc 1 12 0
+.L2:
+	.loc 1 15 0 discriminator 1
+	mov	%d4, 1
+	call	WaitEvent
+.LVL0:
+	.loc 1 16 0 discriminator 1
+	mov	%d4, 5
+	call	ActivateTask
+.LVL1:
+	.loc 1 18 0 discriminator 1
+	mov	%d4, 1
+	call	ClearEvent
+.LVL2:
+	.loc 1 19 0 discriminator 1
+	j	.L2
+.LFE48:
+	.size	FuncTask2, .-FuncTask2
+	.align 1
+	.global	FuncTask3
+	.type	FuncTask3, @function
+FuncTask3:
+.LFB49:
+	.loc 1 28 0
+	.loc 1 30 0
+	mov	%d4, 1
+	mov	%d5, 50
+	mov	%d6, 0
+	call	SetRelAlarm
+.LVL3:
+	.loc 1 31 0
+	j	TerminateTask
+.LVL4:
+.LFE49:
+	.size	FuncTask3, .-FuncTask3
+.section .debug_frame,"",@progbits
+.Lframe0:
+	.uaword	.LECIE0-.LSCIE0
+.LSCIE0:
+	.uaword	0xffffffff
+	.byte	0x3
+	.string	""
+	.uleb128 0x1
+	.sleb128 1
+	.uleb128 0x1b
+	.byte	0xc
+	.uleb128 0x1a
+	.uleb128 0
+	.align 2
+.LECIE0:
+.LSFDE0:
+	.uaword	.LEFDE0-.LASFDE0
+.LASFDE0:
+	.uaword	.Lframe0
+	.uaword	.LFB48
+	.uaword	.LFE48-.LFB48
+	.align 2
+.LEFDE0:
+.LSFDE2:
+	.uaword	.LEFDE2-.LASFDE2
+.LASFDE2:
+	.uaword	.Lframe0
+	.uaword	.LFB49
+	.uaword	.LFE49-.LFB49
+	.align 2
+.LEFDE2:
+.section .text,"ax",@progbits
+.Letext0:
+	.file 2 "c:\\hightec\\toolch~1\\tricore\\v4910-~1.0\\tricore\\include\\stdint.h"
+	.file 3 "C:\\Users\\PC\\ECLIPS~2\\DEMO_E~2\\erika\\inc/ee_platform_types.h"
+	.file 4 "C:\\Users\\PC\\ECLIPS~2\\DEMO_E~2\\erika\\inc/ee_api_types.h"
+	.file 5 "C:\\Users\\PC\\ECLIPS~2\\DEMO_E~2\\erika\\inc/ee_oo_api_osek.h"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x5e4
+	.uahalf	0x3
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.string	"GNU C 4.9.4 build on 2018-04-18 -mlicense-dir=c:\\hightec\\toolch~1\\tricore\\v4910-~1.0\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc27xx -g -Os -fno-common -fshort-enums -fstrict-volatile-bitfields -finline-functions -fzero-initialized-in-bss"
+	.byte	0x1
+	.string	"C:\\Users\\PC\\ECLIPS~2\\DEMO_E~2\\Core1.c"
+	.uaword	.Ltext0
+	.uaword	.Letext0
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x3
+	.string	"uint32_t"
+	.byte	0x2
+	.byte	0x50
+	.uaword	0x149
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x3
+	.string	"OsEE_reg"
+	.byte	0x3
+	.byte	0x5b
+	.uaword	0x1a8
+	.uleb128 0x3
+	.string	"TaskType"
+	.byte	0x4
+	.byte	0x78
+	.uaword	0x1f3
+	.uleb128 0x4
+	.string	"TickType"
+	.byte	0x4
+	.uahalf	0x19e
+	.uaword	0x1f3
+	.uleb128 0x4
+	.string	"AlarmType"
+	.byte	0x4
+	.uahalf	0x1d6
+	.uaword	0x1f3
+	.uleb128 0x4
+	.string	"EventMaskType"
+	.byte	0x4
+	.uahalf	0x237
+	.uaword	0x1f3
+	.uleb128 0x5
+	.byte	0x1
+	.byte	0x4
+	.uahalf	0x2b1
+	.uaword	0x46f
+	.uleb128 0x6
+	.string	"E_OK"
+	.sleb128 0
+	.uleb128 0x6
+	.string	"E_OS_ACCESS"
+	.sleb128 1
+	.uleb128 0x6
+	.string	"E_OS_CALLEVEL"
+	.sleb128 2
+	.uleb128 0x6
+	.string	"E_OS_ID"
+	.sleb128 3
+	.uleb128 0x6
+	.string	"E_OS_LIMIT"
+	.sleb128 4
+	.uleb128 0x6
+	.string	"E_OS_NOFUNC"
+	.sleb128 5
+	.uleb128 0x6
+	.string	"E_OS_RESOURCE"
+	.sleb128 6
+	.uleb128 0x6
+	.string	"E_OS_STATE"
+	.sleb128 7
+	.uleb128 0x6
+	.string	"E_OS_VALUE"
+	.sleb128 8
+	.uleb128 0x6
+	.string	"E_OS_SERVICEID"
+	.sleb128 9
+	.uleb128 0x6
+	.string	"E_OS_ILLEGAL_ADDRESS"
+	.sleb128 10
+	.uleb128 0x6
+	.string	"E_OS_MISSINGEND"
+	.sleb128 11
+	.uleb128 0x6
+	.string	"E_OS_DISABLEDINT"
+	.sleb128 12
+	.uleb128 0x6
+	.string	"E_OS_STACKFAULT"
+	.sleb128 13
+	.uleb128 0x6
+	.string	"E_OS_PARAM_POINTER"
+	.sleb128 14
+	.uleb128 0x6
+	.string	"E_OS_PROTECTION_MEMORY"
+	.sleb128 15
+	.uleb128 0x6
+	.string	"E_OS_PROTECTION_TIME"
+	.sleb128 16
+	.uleb128 0x6
+	.string	"E_OS_PROTECTION_ARRIVAL"
+	.sleb128 17
+	.uleb128 0x6
+	.string	"E_OS_PROTECTION_LOCKED"
+	.sleb128 18
+	.uleb128 0x6
+	.string	"E_OS_PROTECTION_EXCEPTION"
+	.sleb128 19
+	.uleb128 0x6
+	.string	"E_OS_SPINLOCK"
+	.sleb128 20
+	.uleb128 0x6
+	.string	"E_OS_INTERFERENCE_DEADLOCK"
+	.sleb128 21
+	.uleb128 0x6
+	.string	"E_OS_NESTING_DEADLOCK"
+	.sleb128 22
+	.uleb128 0x6
+	.string	"E_OS_CORE"
+	.sleb128 23
+	.uleb128 0x6
+	.string	"E_OS_SYS_INIT"
+	.sleb128 24
+	.uleb128 0x6
+	.string	"E_OS_SYS_SUSPEND_NESTING_LIMIT"
+	.sleb128 25
+	.uleb128 0x6
+	.string	"E_OS_SYS_TASK"
+	.sleb128 26
+	.uleb128 0x6
+	.string	"E_OS_SYS_STACK"
+	.sleb128 27
+	.uleb128 0x6
+	.string	"E_OS_SYS_ACT"
+	.sleb128 28
+	.byte	0
+	.uleb128 0x4
+	.string	"OsEE_status_type"
+	.byte	0x4
+	.uahalf	0x2d4
+	.uaword	0x24c
+	.uleb128 0x4
+	.string	"StatusType"
+	.byte	0x4
+	.uahalf	0x2d9
+	.uaword	0x46f
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x7
+	.byte	0x1
+	.string	"FuncTask2"
+	.byte	0x1
+	.byte	0xb
+	.byte	0x1
+	.uaword	.LFB48
+	.uaword	.LFE48
+	.byte	0x1
+	.byte	0x9c
+	.byte	0x1
+	.uaword	0x4fb
+	.uleb128 0x8
+	.uaword	.LVL0
+	.uaword	0x542
+	.uaword	0x4d8
+	.uleb128 0x9
+	.byte	0x1
+	.byte	0x54
+	.byte	0x1
+	.byte	0x31
+	.byte	0
+	.uleb128 0x8
+	.uaword	.LVL1
+	.uaword	0x561
+	.uaword	0x4eb
+	.uleb128 0x9
+	.byte	0x1
+	.byte	0x54
+	.byte	0x1
+	.byte	0x35
+	.byte	0
+	.uleb128 0xa
+	.uaword	.LVL2
+	.uaword	0x583
+	.uleb128 0x9
+	.byte	0x1
+	.byte	0x54
+	.byte	0x1
+	.byte	0x31
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.byte	0x1
+	.string	"FuncTask3"
+	.byte	0x1
+	.byte	0x1b
+	.byte	0x1
+	.uaword	.LFB49
+	.uaword	.LFE49
+	.byte	0x1
+	.byte	0x9c
+	.byte	0x1
+	.uaword	0x542
+	.uleb128 0x8
+	.uaword	.LVL3
+	.uaword	0x5a3
+	.uaword	0x537
+	.uleb128 0x9
+	.byte	0x1
+	.byte	0x56
+	.byte	0x1
+	.byte	0x30
+	.uleb128 0x9
+	.byte	0x1
+	.byte	0x55
+	.byte	0x2
+	.byte	0x8
+	.byte	0x32
+	.uleb128 0x9
+	.byte	0x1
+	.byte	0x54
+	.byte	0x1
+	.byte	0x31
+	.byte	0
+	.uleb128 0xb
+	.uaword	.LVL4
+	.byte	0x1
+	.uaword	0x5ce
+	.byte	0
+	.uleb128 0xc
+	.byte	0x1
+	.string	"WaitEvent"
+	.byte	0x5
+	.uahalf	0x333
+	.byte	0x1
+	.uaword	0x488
+	.byte	0x1
+	.uaword	0x561
+	.uleb128 0xd
+	.uaword	0x236
+	.byte	0
+	.uleb128 0xc
+	.byte	0x1
+	.string	"ActivateTask"
+	.byte	0x5
+	.uahalf	0x178
+	.byte	0x1
+	.uaword	0x488
+	.byte	0x1
+	.uaword	0x583
+	.uleb128 0xd
+	.uaword	0x203
+	.byte	0
+	.uleb128 0xc
+	.byte	0x1
+	.string	"ClearEvent"
+	.byte	0x5
+	.uahalf	0x38d
+	.byte	0x1
+	.uaword	0x488
+	.byte	0x1
+	.uaword	0x5a3
+	.uleb128 0xd
+	.uaword	0x236
+	.byte	0
+	.uleb128 0xc
+	.byte	0x1
+	.string	"SetRelAlarm"
+	.byte	0x5
+	.uahalf	0x294
+	.byte	0x1
+	.uaword	0x488
+	.byte	0x1
+	.uaword	0x5ce
+	.uleb128 0xd
+	.uaword	0x224
+	.uleb128 0xd
+	.uaword	0x213
+	.uleb128 0xd
+	.uaword	0x213
+	.byte	0
+	.uleb128 0xe
+	.byte	0x1
+	.string	"TerminateTask"
+	.byte	0x5
+	.uahalf	0x1c9
+	.byte	0x1
+	.uaword	0x488
+	.byte	0x1
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x410a
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0xa
+	.uleb128 0x2111
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0x4109
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x2115
+	.uleb128 0xc
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xd
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xe
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x1c
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	.Ltext0
+	.uaword	.Letext0-.Ltext0
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.extern	TerminateTask,STT_FUNC,0
+	.extern	SetRelAlarm,STT_FUNC,0
+	.extern	ClearEvent,STT_FUNC,0
+	.extern	ActivateTask,STT_FUNC,0
+	.extern	WaitEvent,STT_FUNC,0
+	.ident	"GCC: (HighTec Release HDP-v4.9.1.0-infineon-2.0-df254e8) 4.9.4 build on 2018-04-18"

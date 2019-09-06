@@ -1,0 +1,312 @@
+/* ###*B*###
+ * Erika Enterprise, version 3
+ * 
+ * Copyright (C) 2017 - 2018 Evidence s.r.l.
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or (at
+ * your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License, version 2, for more details.
+ * 
+ * You should have received a copy of the GNU General Public License,
+ * version 2, along with this program; if not, see
+ * < www.gnu.org/licenses/old-licenses/gpl-2.0.html >.
+ * 
+ * This program is distributed to you subject to the following
+ * clarifications and special exceptions to the GNU General Public
+ * License, version 2.
+ * 
+ * THIRD PARTIES' MATERIALS
+ * 
+ * Certain materials included in this library are provided by third
+ * parties under licenses other than the GNU General Public License. You
+ * may only use, copy, link to, modify and redistribute this library
+ * following the terms of license indicated below for third parties'
+ * materials.
+ * 
+ * In case you make modified versions of this library which still include
+ * said third parties' materials, you are obligated to grant this special
+ * exception.
+ * 
+ * The complete list of Third party materials allowed with ERIKA
+ * Enterprise version 3, together with the terms and conditions of each
+ * license, is present in the file THIRDPARTY.TXT in the root of the
+ * project.
+ * ###*E*### */
+
+/** \file   conf.oil
+ *  \brief  System Configuration.
+ *
+ *  This file contains the System Configuration for Erika Enterprise.
+ *
+ *  \author  Errico Guidieri
+ *  \date    2017
+ */
+
+CPU mySystem {
+
+  OS myOs {
+  	
+	USEORTI = TRUE;
+    /* EE_OPT = "OS_EE_VERBOSE"; */
+    EE_OPT = "OSEE_DEBUG";
+    EE_OPT = "OSEE_ASSERT";
+    EE_OPT = "OS_EE_APPL_BUILD_DEBUG";
+    EE_OPT = "EE_BUILD_SINGLE_ELF"; // To generate the .elf file extension.
+    EE_OPT = "OS_EE_BUILD_DEBUG";
+
+    CPU_DATA = TRICORE {
+      ID = 0x0; //ID is a number uniquely identifying the CPU.
+      CPU_CLOCK = 200.0;
+      MULTI_STACK = TRUE; //defines if the system supports multiple stacks for the application tasks or not
+      COMPILER = GCC;
+      
+    };
+	
+	 CPU_DATA = TRICORE {
+      ID = 0x1;
+      CPU_CLOCK = 200.0;
+      MULTI_STACK = TRUE;
+     
+    };
+    
+    CPU_DATA = TRICORE {
+      ID = 0x2;
+      CPU_CLOCK = 200.0;
+      MULTI_STACK = TRUE;
+   
+    };
+	
+    MCU_DATA = TC27X {
+      DERIVATIVE = "tc277tf";
+      REVISION = "DC";
+    };
+
+    STATUS = EXTENDED;
+    ERRORHOOK = TRUE;
+    USERESSCHEDULER = FALSE;
+
+    KERNEL_TYPE = OSEK {
+      CLASS = ECC1;
+//      RQ    = MQ;
+    };
+  };
+
+  APPDATA tricore_3C {
+    APP_SRC = "Core0.c";
+    APP_SRC = "Core1.c";
+    APP_SRC = "Core2.c";
+  };
+ /* Tasks for Core0 */
+  TASK TaskM {
+  	CPU_ID = 0x0;
+    PRIORITY = 1;
+    STACK = PRIVATE {
+      SIZE = 256;
+    };
+  };
+
+  TASK TaskCpu0 {
+    CPU_ID = 0x0;
+    PRIORITY = 2;
+    STACK = PRIVATE {
+      SIZE = 256;
+    };
+  };
+ /* Tasks for Core1 */
+  TASK Task2 {
+  	CPU_ID = 0x1;
+    PRIORITY = 1;
+    AUTOSTART = TRUE; //specifies if the task should be automatically activated at system startup by the StartOS primitive.
+    STACK = PRIVATE {
+      SIZE = 256;
+    };
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    EVENT = RemoteEvent;
+  };
+
+  TASK Task3 {
+  	CPU_ID = 0x1;
+    PRIORITY = 2;
+    STACK = PRIVATE {
+      SIZE = 256;
+    };
+    SCHEDULE = FULL;
+  };
+  /* Tasks for Core2 */
+TASK TASK_1MS{ 
+PRIORITY = 3; 
+ACTIVATION = 1;
+CPU_ID = 0x2;
+AUTOSTART = FALSE;
+SCHEDULE = FULL;
+STACK = PRIVATE {
+      SIZE = 128;
+      EXTENDED = TRUE;
+    };
+};
+
+TASK TASK_5MS{ 
+PRIORITY = 4; 
+CPU_ID = 0x2;
+ACTIVATION = 1;
+AUTOSTART = FALSE; 
+SCHEDULE = FULL;
+STACK = PRIVATE {
+      SIZE = 128;
+      EXTENDED = TRUE;
+    };
+};
+
+TASK TASK_10MS{ 
+PRIORITY = 8; 
+CPU_ID = 0x2;
+ACTIVATION = 1;
+AUTOSTART = FALSE; 
+SCHEDULE = FULL;
+STACK = PRIVATE {
+      SIZE = 128;
+      EXTENDED = TRUE;
+    };
+};
+
+TASK TASK_20MS{ 
+PRIORITY = 16; 
+CPU_ID = 0x2;
+ACTIVATION = 1;
+AUTOSTART = FALSE; 
+SCHEDULE = FULL;
+STACK = PRIVATE {
+      SIZE = 128;
+      EXTENDED = TRUE;
+    };
+};
+
+TASK TASK_50MS{ 
+PRIORITY = 32; 
+CPU_ID = 0x2;
+ACTIVATION = 1;
+AUTOSTART = FALSE; 
+SCHEDULE = FULL;
+STACK = PRIVATE {
+      SIZE = 128;
+      EXTENDED = TRUE;
+    };
+};
+
+TASK TASK_100MS{ 
+PRIORITY = 64; 
+CPU_ID = 0x2;
+ACTIVATION = 1;
+AUTOSTART = FALSE; 
+SCHEDULE = FULL;
+STACK = PRIVATE {
+      SIZE = 128;
+      EXTENDED = TRUE;
+    };
+};
+
+  EVENT RemoteEvent  { MASK = AUTO; };
+  COUNTER system_timer_master {
+    CPU_ID = 0x0;
+    MINCYCLE = 1; //minimum interval between 2 triggering of the alarm.
+    MAXALLOWEDVALUE = 2147483647; /*Maximum value of the counter. This value is used by
+									the OIL compiler to generate the size of the variable
+									used to store the value of the counter. */
+    TICKSPERBASE = 1;/*number of “ticks” (from the interrupt
+					   source) needed to have the counter
+					   increased by one. */
+    TYPE = HARDWARE {
+        DEVICE = "STM_SR0"; //(System Timer Module)
+        SYSTEM_TIMER = TRUE;
+        PRIORITY = 2;
+    };
+    SECONDSPERTICK = 0.01;
+  };
+  /************ Example ************ */
+  /*SystemCounter has a MaxAllowedValue equal to 32767, a TicksPerBase
+	and a MinCycle equal to 1. There is one tick every 10ms. */
+   ALARM AlarmMaster {
+    COUNTER = system_timer_master;
+    ACTION = ACTIVATETASK { TASK = TaskM; };/*action to be performed by the alarm.
+											Here, activation of task TaskM. */
+    AUTOSTART = TRUE { ALARMTIME = 100;/*The alarm is triggered à 100 */
+    				CYCLETIME = 100; /*It is a periodic alarm which is
+									triggered every 100 counter tick */
+    };
+  };
+  
+ COUNTER system_timer_slave {
+    CPU_ID = 0x1;
+    MINCYCLE = 1;
+    MAXALLOWEDVALUE = 2147483647;
+    TICKSPERBASE = 1;
+    TYPE = HARDWARE {
+      DEVICE = "STM_SR0"; //(System Timer Module)
+      SYSTEM_TIMER = TRUE;
+      PRIORITY = 2;
+    };
+    SECONDSPERTICK = 0.01;
+  };
+  
+  ALARM AlarmRemoteCPU0 {
+    COUNTER = system_timer_slave;
+    ACTION = ACTIVATETASK { TASK = TaskCpu0; };
+  };
+  /*This configuration belongs to the slave 2 code */
+  /*The COUNTER object is the timing reference that is used by alarms. */
+  COUNTER SystemTimer_slave2 {
+  	CPU_ID = 0x2;
+    MINCYCLE = 1; //this is the minimum value that can be given to the cycle parameter of an alarm
+    MAXALLOWEDVALUE = 32767; //is the maximum value of the counter.
+    TICKSPERBASE = 1;
+    TYPE = HARDWARE { // the kernel creates a customized handler linked to a timer.
+      SYSTEM_TIMER = TRUE; // it is handled as the OSEK/VDX system timer
+      PRIORITY     = 2;
+      DEVICE       = "STM_SR0";
+    };
+    SECONDSPERTICK = 0.001; // this is the period in seconds of the timer.
+  };
+  SCHEDULETABLE SchedTab1 {
+   COUNTER = SystemTimer_slave2;
+   DURATION = 500;
+   REPEATING = TRUE;
+   AUTOSTART = TRUE {
+   	 TYPE = ABSOLUTE;
+     START_VALUE = 0;
+   };
+   EXPIRE_POINT = ACTION {
+     EXPIRE_VALUE = 1;
+     ACTION = ACTIVATETASK { TASK = TASK_1MS; };
+   };
+   EXPIRE_POINT = ACTION {
+     EXPIRE_VALUE = 5;
+     ACTION = ACTIVATETASK { TASK = TASK_5MS; };
+   };
+    EXPIRE_POINT = ACTION {
+     EXPIRE_VALUE = 10;
+     ACTION = ACTIVATETASK { TASK = TASK_10MS; };
+   };
+    EXPIRE_POINT = ACTION {
+     EXPIRE_VALUE = 20;
+     ACTION = ACTIVATETASK { TASK = TASK_20MS; };
+   };
+    EXPIRE_POINT = ACTION {
+     EXPIRE_VALUE = 50;
+     ACTION = ACTIVATETASK { TASK = TASK_50MS; };
+   };
+    EXPIRE_POINT = ACTION {
+     EXPIRE_VALUE = 100;
+     ACTION = ACTIVATETASK { TASK = TASK_100MS; };
+   };
+ };
+  
+  
+ 
+};

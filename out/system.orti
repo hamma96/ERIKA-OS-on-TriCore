@@ -1,0 +1,493 @@
+/***************************************************************************
+ *
+ * ORTI: Declaration Section SMP Version ("2.3")
+ *
+ **************************************************************************/
+VERSION {
+  KOIL = "2.3";
+  OSSEMANTICS = "ORTI", "2.3";
+};
+
+IMPLEMENTATION ERIKA3 {
+  OS {
+    CTYPE "int" vs_SMP_NUMCPU, "Number of CPUs";
+
+    /* Here for each task a small description and its pointer */
+    TOTRACE ENUM "void *" [
+      "system_timer_master" = "&osEE_tdb_array_core0[0U]",
+      "TaskM" = "&osEE_tdb_array_core0[1U]",
+      "TaskCpu0" = "&osEE_tdb_array_core0[2U]",
+      "system_timer_slave" = "&osEE_tdb_array_core1[0U]",
+      "Task2" = "&osEE_tdb_array_core1[1U]",
+      "Task3" = "&osEE_tdb_array_core1[2U]",
+      "SystemTimer_slave2" = "&osEE_tdb_array_core2[0U]",
+      "TASK_1MS" = "&osEE_tdb_array_core2[1U]",
+      "TASK_5MS" = "&osEE_tdb_array_core2[2U]",
+      "TASK_10MS" = "&osEE_tdb_array_core2[3U]",
+      "TASK_20MS" = "&osEE_tdb_array_core2[4U]",
+      "TASK_50MS" = "&osEE_tdb_array_core2[5U]",
+      "TASK_100MS" = "&osEE_tdb_array_core2[6U]",
+      "Idle_Core0" = "&osEE_tdb_array_core0[3U]",
+      "Idle_Core1" = "&osEE_tdb_array_core1[3U]",
+      "Idle_Core2" = "&osEE_tdb_array_core2[7U]"
+    ] RUNNINGTASK[], "Running Task or ISR2 Identification";
+
+    ENUM  [ 
+      "BASIC" = 0,
+      "EXTENDED" = 1,
+      "ISR2" = 2,
+      "IDLE" = 3
+    ] RUNNININGTYPE[], "Running Entity Type";
+
+    ENUM "unsigned char" [
+      "Not Running (0)" = 0,
+      "1" = 1,
+      "2" = 2,
+      "3" = 3,
+      "4" = 4,
+      "8" = 8,
+      "16" = 16,
+      "32" = 32,
+      "64" = 64,
+      "ISR2 2" = 129
+    ] RUNNINGPRIORITY[], "Priority of Running Task";
+
+    TOTRACE ENUM "int" [
+      "ActivateTask" = 0,
+      "TerminateTask" = 2,
+      "ChainTask" = 4,
+      "Schedule" = 6,
+      "GetTaskID" = 8,
+      "GetTaskState" = 10,
+      "DisableAllInterrupts" = 12,
+      "EnableAllInterrupts" = 14,
+      "SuspendAllInterrupts" = 16,
+      "ResumeAllInterrupts" = 18,
+      "SuspendOSInterrupts" = 20,
+      "ResumeOSInterrupts" = 22,
+      "SetEvent" = 28,
+      "ClearEvent" = 30,
+      "GetEvent" = 32,
+      "WaitEvent" = 34,
+      "GetAlarmBase" = 36,
+      "GetAlarm" = 38,
+      "SetRelAlarm" = 40,
+      "SetAbsAlarm" = 42,
+      "CancelAlarm" = 44,
+      "IncrementCounter" = 46,
+      "GetCounterValue" = 48,
+      "GetElapsedValue" = 50,
+      "StartScheduleTableRel"  = 52,
+      "StartScheduleTableAbs"  = 54,
+      "StopScheduleTable"      = 56,
+      "GetScheduleTableStatus" = 58,
+      "NextScheduleTable"      = 60,
+      "SyncScheduleTable"      = 62,
+      "GetActiveApplicationMode" = 70,
+      "ShutdownOS" = 72,
+      "StartOS" = 74,
+      "ShutdownAllCores" = 76,
+      "TaskBody" = 78,
+      "ISR2Body" = 80,
+      "Action" = 82,
+      "Kernel" = 84,
+      "Invalid" = 86
+    ] SERVICETRACE[], "OS Services Watch";
+
+    /* Please note int and not unsigned char */
+    ENUM "int" [
+      "E_OK" = 0,
+      "E_OS_ACCESS" = 1,
+      "E_OS_CALLEVEL" = 2,
+      "E_OS_ID" = 3,
+      "E_OS_LIMIT" = 4,
+      "E_OS_NOFUNC" = 5,
+      "E_OS_RESOURCE" = 6,
+      "E_OS_STATE" = 7,
+      "E_OS_VALUE" = 8,
+      "E_OS_SERVICEID" = 9,
+      "E_OS_ILLEGAL_ADDRESS" = 10,
+      "E_OS_MISSINGEND" = 11,
+      "E_OS_DISABLEDINT" = 12,
+      "E_OS_STACKFAULT" = 13,
+      "E_OS_PARAM_POINTER" = 14,
+      "E_OS_PROTECTION_MEMORY" = 15,
+      "E_OS_PROTECTION_TIME" = 16,
+      "E_OS_PROTECTION_ARRIVAL" = 17,
+      "E_OS_PROTECTION_LOCKED" = 18,
+      "E_OS_PROTECTION_EXCEPTION" = 19,
+      "E_OS_SPINLOCK" = 20,
+      "E_OS_INTERFERENCE_DEADLOCK" = 21,
+      "E_OS_NESTING_DEADLOCK" = 22,
+      /* Multicore */
+      "E_OS_CORE" = 23,
+      /* Implementation specific errors: they must start with E_OS_SYS_ */
+      /* Error during StartOS */
+      "E_OS_SYS_INIT" = 24,
+      "E_OS_SYS_SUSPEND_NESTING_LIMIT" = 25,
+      /* Error Codes for Dynamic APIs */
+      "E_OS_SYS_TASK" = 26,
+      "E_OS_SYS_STACK" = 27,
+      "E_OS_SYS_ACT" = 28
+    ] LASTERROR[], "Last error";
+
+    ENUM "unsigned char" [
+      "OSDEFAULTAPPMODE" = 0
+    ] CURRENTAPPMODE[], "Current application mode";
+  }, "OS";
+
+  TASK {
+    ENUM [
+      "OS_CORE_ID_0" = "0",
+      "OS_CORE_ID_1" = "1",
+      "OS_CORE_ID_2" = "2"
+    ] CORE_ID, "Core ID";
+    ENUM "unsigned char" [
+      "Idle (0)" = 0,
+      "1" = 1,
+      "2" = 2,
+      "3" = 3,
+      "4" = 4,
+      "8" = 8,
+      "16" = 16,
+      "32" = 32,
+      "64" = 64,
+      "ISR2 2" = 129
+    ] PRIORITY , "Current priority";
+    ENUM [
+      "SUSPENDED" = 0,
+      "READY"     = 1,
+      "READY"     = 2, /* OSEE_TASK_READY_STACKED */
+      "WAITING"   = 3,
+      "RUNNING"   = 4,
+      "RUNNING"   = 5  /* OSEE_TASK_CHAINED */
+    ] STATE, "Task State";
+    CTYPE "unsigned int" EVENTMASK, "Event Mask";
+    CTYPE "unsigned int" WAITMASK, "Wait Mask";
+    ENUM "unsigned int" [
+      "Stack TaskM" : Stack_TaskM = "1",
+      "Stack TaskCpu0" : Stack_TaskCpu0 = "2",
+      "System Stack Core0" : System_Stack_Core0 = "3"
+      "Stack Task2" : Stack_Task2 = "4",
+      "Stack Task3" : Stack_Task3 = "5",
+      "System Stack Core1" : System_Stack_Core1 = "6"
+      "Stack TASK_1MS" : Stack_TASK_1MS = "7",
+      "Stack TASK_5MS" : Stack_TASK_5MS = "8",
+      "Stack TASK_10MS" : Stack_TASK_10MS = "9",
+      "Stack TASK_20MS" : Stack_TASK_20MS = "10",
+      "Stack TASK_50MS" : Stack_TASK_50MS = "11",
+      "Stack TASK_100MS" : Stack_TASK_100MS = "12",
+      "System Stack Core2" : System_Stack_Core2 = "13"
+    ] STACK, "Task Stack";
+    CTYPE "int" CURRENTACTIVATIONS, "Current activations";
+  }, "TASKs";
+
+  ISR2 {
+    ENUM [
+      "OS_CORE_ID_0" = "0",
+      "OS_CORE_ID_1" = "1",
+      "OS_CORE_ID_2" = "2"
+    ] CORE_ID, "Core ID";
+    ENUM "unsigned char" [
+      "Idle (0)" = 0,
+      "ISR2 2" = 129
+    ] PRIORITY , "Current priority";
+    ENUM [
+      "SUSPENDED" = 0,
+      "READY"     = 1,
+      "READY"     = 2, /* OSEE_TASK_READY_STACKED */
+      "RUNNING"   = 4,
+    ] STATE, "Task State";
+    ENUM "unsigned int" [
+      "System Stack Core0" : System_Stack_Core0 = "3"
+      "System Stack Core1" : System_Stack_Core1 = "6"
+      "System Stack Core2" : System_Stack_Core2 = "13"
+    ] STACK, "ISR2 Stack";
+  }, "ISR2s";
+
+  STACK {
+    ENUM [
+      "OS_CORE_ID_0" = "0",
+      "OS_CORE_ID_1" = "1",
+      "OS_CORE_ID_2" = "2"
+    ] CORE_ID, "Core ID";
+    CTYPE SIZE, "Stack Size (Byte)";
+    CTYPE "unsigned int *" BASEADDRESS, "Base Address";
+    STRING STACKDIRECTION, "Stack Direction";
+    CTYPE "unsigned int" FILLPATTERN, "Stack Fill Pattern";
+  }, "Stacks";
+
+  ALARM {
+    ENUM [
+      "OS_CORE_ID_0" = "0",
+      "OS_CORE_ID_1" = "1",
+      "OS_CORE_ID_2" = "2"
+    ] CORE_ID, "Core ID";
+    CTYPE "unsigned int" ALARMTIME, "Alarm Time"; /* EE_TYPETICK */
+    CTYPE "unsigned int" CYCLETIME, "Cycle Time"; /* EE_TYPETICK */
+    ENUM [
+      "INACTIVE"  = 0,
+      "CANCELED"  = 1,
+      "ACTIVE"    = 2,
+      "EXPIRED"   = 3,
+      "REENABLED" = 4
+    ] STATE, "Alarm state";
+    STRING ACTION, "Action";
+    STRING COUNTER, "Counter";
+    CTYPE "unsigned int" COUNTERVALUE, "Counter Value";
+  }, "Alarms";
+}; /* END OF IMPLEMENTATION */
+
+/******************************************************************************
+ *
+ * ORTI: Information Section
+ *
+ *****************************************************************************/
+OS ERIKA3 {
+  vs_SMP_NUMCPU = "3"; /* SMP system */
+  RUNNINGTASK[0] = "osEE_ccb_var_core0.p_curr"; /* Running TASK or ISR2 of core 0 */
+  RUNNININGTYPE[0] = "osEE_ccb_var_core0.p_curr->task_type";
+  RUNNINGPRIORITY[0] = "osEE_ccb_var_core0.p_curr->p_tcb->current_prio";
+  SERVICETRACE[0] = "osEE_ccb_var_core0.service_id";
+  LASTERROR[0] = "osEE_ccb_var_core0.last_error";
+  RUNNINGTASK[1] = "osEE_ccb_var_core1.p_curr"; /* Running TASK or ISR2 of core 1 */
+  RUNNININGTYPE[1] = "osEE_ccb_var_core1.p_curr->task_type";
+  RUNNINGPRIORITY[1] = "osEE_ccb_var_core1.p_curr->p_tcb->current_prio";
+  SERVICETRACE[1] = "osEE_ccb_var_core1.service_id";
+  LASTERROR[1] = "osEE_ccb_var_core1.last_error";
+  RUNNINGTASK[2] = "osEE_ccb_var_core2.p_curr"; /* Running TASK or ISR2 of core 2 */
+  RUNNININGTYPE[2] = "osEE_ccb_var_core2.p_curr->task_type";
+  RUNNINGPRIORITY[2] = "osEE_ccb_var_core2.p_curr->p_tcb->current_prio";
+  SERVICETRACE[2] = "osEE_ccb_var_core2.service_id";
+  LASTERROR[2] = "osEE_ccb_var_core2.last_error";
+  CURRENTAPPMODE = "osEE_ccb_var_core0.app_mode";
+};
+
+/* TASKs & ISR2 */
+ISR2 system_timer_master {
+  CORE_ID  = "(0)";
+  PRIORITY = "osEE_tcb_array_core0[0].current_prio";
+  STATE = "osEE_tcb_array_core0[0].status";
+  STACK = "(3)";
+};
+
+TASK TaskM {
+  CORE_ID  = "(0)";
+  PRIORITY = "osEE_tcb_array_core0[1].current_prio";
+  STATE = "osEE_tcb_array_core0[1].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core0[1].current_num_of_act";  /* 1 = max activations */
+  STACK = "(1)";
+};
+
+TASK TaskCpu0 {
+  CORE_ID  = "(0)";
+  PRIORITY = "osEE_tcb_array_core0[2].current_prio";
+  STATE = "osEE_tcb_array_core0[2].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core0[2].current_num_of_act";  /* 1 = max activations */
+  STACK = "(2)";
+};
+
+ISR2 system_timer_slave {
+  CORE_ID  = "(1)";
+  PRIORITY = "osEE_tcb_array_core1[0].current_prio";
+  STATE = "osEE_tcb_array_core1[0].status";
+  STACK = "(6)";
+};
+
+TASK Task2 {
+  CORE_ID  = "(1)";
+  PRIORITY = "osEE_tcb_array_core1[1].current_prio";
+  STATE = "osEE_tcb_array_core1[1].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core1[1].current_num_of_act";  /* 1 = max activations */
+  STACK = "(4)";
+};
+
+TASK Task3 {
+  CORE_ID  = "(1)";
+  PRIORITY = "osEE_tcb_array_core1[2].current_prio";
+  STATE = "osEE_tcb_array_core1[2].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core1[2].current_num_of_act";  /* 1 = max activations */
+  STACK = "(5)";
+};
+
+ISR2 SystemTimer_slave2 {
+  CORE_ID  = "(2)";
+  PRIORITY = "osEE_tcb_array_core2[0].current_prio";
+  STATE = "osEE_tcb_array_core2[0].status";
+  STACK = "(13)";
+};
+
+TASK TASK_1MS {
+  CORE_ID  = "(2)";
+  PRIORITY = "osEE_tcb_array_core2[1].current_prio";
+  STATE = "osEE_tcb_array_core2[1].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core2[1].current_num_of_act";  /* 1 = max activations */
+  STACK = "(7)";
+};
+
+TASK TASK_5MS {
+  CORE_ID  = "(2)";
+  PRIORITY = "osEE_tcb_array_core2[2].current_prio";
+  STATE = "osEE_tcb_array_core2[2].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core2[2].current_num_of_act";  /* 1 = max activations */
+  STACK = "(8)";
+};
+
+TASK TASK_10MS {
+  CORE_ID  = "(2)";
+  PRIORITY = "osEE_tcb_array_core2[3].current_prio";
+  STATE = "osEE_tcb_array_core2[3].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core2[3].current_num_of_act";  /* 1 = max activations */
+  STACK = "(9)";
+};
+
+TASK TASK_20MS {
+  CORE_ID  = "(2)";
+  PRIORITY = "osEE_tcb_array_core2[4].current_prio";
+  STATE = "osEE_tcb_array_core2[4].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core2[4].current_num_of_act";  /* 1 = max activations */
+  STACK = "(10)";
+};
+
+TASK TASK_50MS {
+  CORE_ID  = "(2)";
+  PRIORITY = "osEE_tcb_array_core2[5].current_prio";
+  STATE = "osEE_tcb_array_core2[5].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core2[5].current_num_of_act";  /* 1 = max activations */
+  STACK = "(11)";
+};
+
+TASK TASK_100MS {
+  CORE_ID  = "(2)";
+  PRIORITY = "osEE_tcb_array_core2[6].current_prio";
+  STATE = "osEE_tcb_array_core2[6].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array_core2[6].current_num_of_act";  /* 1 = max activations */
+  STACK = "(12)";
+};
+
+/* Stacks */
+STACK Stack_TaskM {
+  CORE_ID  = "(0)";
+  SIZE = "256";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_1[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_TaskCpu0 {
+  CORE_ID  = "(0)";
+  SIZE = "256";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_2[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK System_Stack_Core0 {
+  CORE_ID  = "(0)";
+  SIZE = "(unsigned int)__USTACK0 - (unsigned int)__USTACK0_END";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "__USTACK0_END";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_Task2 {
+  CORE_ID  = "(1)";
+  SIZE = "256";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_4[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_Task3 {
+  CORE_ID  = "(1)";
+  SIZE = "256";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_5[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK System_Stack_Core1 {
+  CORE_ID  = "(1)";
+  SIZE = "(unsigned int)__USTACK1 - (unsigned int)__USTACK1_END";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "__USTACK1_END";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_TASK_1MS {
+  CORE_ID  = "(2)";
+  SIZE = "128";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_7[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_TASK_5MS {
+  CORE_ID  = "(2)";
+  SIZE = "128";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_8[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_TASK_10MS {
+  CORE_ID  = "(2)";
+  SIZE = "128";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_9[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_TASK_20MS {
+  CORE_ID  = "(2)";
+  SIZE = "128";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_10[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_TASK_50MS {
+  CORE_ID  = "(2)";
+  SIZE = "128";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_11[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK Stack_TASK_100MS {
+  CORE_ID  = "(2)";
+  SIZE = "128";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&osEE_task_stack_12[0]";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+STACK System_Stack_Core2 {
+  CORE_ID  = "(2)";
+  SIZE = "(unsigned int)__USTACK2 - (unsigned int)__USTACK2_END";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "__USTACK2_END";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+/* Alarms */
+ALARM AlarmMaster {
+  CORE_ID   = "(0)";
+  ALARMTIME = "osEE_alarm_cb_array_core0[0].when";
+  CYCLETIME = "osEE_alarm_cb_array_core0[0].cycle";
+  STATE = "osEE_alarm_cb_array_core0[0].status";
+  ACTION = "Activate TASK TaskM";
+  COUNTER = "system_timer_master";
+  COUNTERVALUE = "osEE_alarm_db_array_core0[0].p_counter_db->p_counter_cb->value";
+};
+
+ALARM AlarmRemoteCPU0 {
+  CORE_ID   = "(1)";
+  ALARMTIME = "osEE_alarm_cb_array_core1[0].when";
+  CYCLETIME = "osEE_alarm_cb_array_core1[0].cycle";
+  STATE = "osEE_alarm_cb_array_core1[0].status";
+  ACTION = "Activate TASK TaskCpu0";
+  COUNTER = "system_timer_slave";
+  COUNTERVALUE = "osEE_alarm_db_array_core1[0].p_counter_db->p_counter_cb->value";
+};
+
